@@ -10,7 +10,6 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <script src="/static/bootstrap/js/jquery.min.js"></script>
     <script src="/static/bootstrap/js/bootstrap-dropdown.js"></script>
 
@@ -21,7 +20,9 @@
     </script>
 
     <!-- Le styles -->
+    <link href="/static/css/effeckt.css" rel="stylesheet">
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -66,6 +67,17 @@
 
   <body>
 
+  <div class="effeckt-wrap effeckt-modal-wrap" id="effeckt-modal-wrap"> <!-- for centering transform -->
+    <div class="effeckt-content effeckt-modal" id="effeckt-modal">
+      <h3>Modal Dialog</h3>
+      <div class="effeckt-modal-content">
+        <p>This is a modal window.</p>
+        <button class="effeckt-modal-close">Close me!</button>
+      </div>
+    </div>
+  </div>
+
+
     <div class="topbar">
       <div class="fill">
         <div class="container">
@@ -83,7 +95,7 @@
       <div class='cleaner'></div>
       <h1>MQ管理團隊</h1>
 
-      <div class='span16'>
+    <div class='span16'>
         <div class='content-row'>
           <div class='well'>
             <img src='/static/images/sample/fafa.jpg' class='content-thumbnail'/>
@@ -94,8 +106,7 @@
             <div class='cleaner'></div>
             <div class='time-left'></div>
             <div class='cleaner'></div>
-            <input type='button' class='btn primary large' value='詳細介紹'/>
-          </div>
+        </div>
           <div class='well'>
             <img src='/static/images/sample/q.jpg' class='content-thumbnail'/>
             <div class='cleaner'></div>
@@ -105,7 +116,7 @@
             <div class='cleaner'></div>
             <div class='time-left'></div>
             <div class='cleaner'></div>
-            <input type='button' class='btn primary large' value='詳細介紹'/>
+            <div align="center"> <input type='button' class='effeckt-modal-button'  data-effeckt-type="from-below" value='詳細介紹'/> </div>
           </div>
           <div class='well'>
             <img src='/static/images/sample/watson.jpg' class='content-thumbnail'/>
@@ -173,4 +184,9 @@
     </div> <!-- /container -->
 
   </body>
+
+    <script src="/static/js/core.js"></script>
+    <script src="/static/js/modal.js"></script>
+    <script src="/static/js/buttons.js"></script>
+
 </html>
