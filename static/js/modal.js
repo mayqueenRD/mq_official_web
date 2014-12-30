@@ -64,7 +64,7 @@
     var $button = $(e.target);
     var target = $button.data('effeckt-target');
 
-    this.$element = $(target || '#effeckt-modal-wrap');
+    this.$element = $(target || '#effeckt-modal-wrap-' + $button.data('id'));
 
     if ( !this.$element.length ) return;
 
