@@ -20,6 +20,9 @@ def news():
 def contact():
     return render_template('mayqueen_web/contact1.html')
 
+@app.route("/goods")
+def goods():
+    return render_template('mayqueen_web/goods.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
