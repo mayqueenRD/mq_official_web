@@ -24,5 +24,10 @@ def contact():
 def goods():
     return render_template('mayqueen_web/goods.html')
 
+@app.route("/pibox_show")
+def pibox_show():
+    return render_template('mayqueen_web/pibox_show.html')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
