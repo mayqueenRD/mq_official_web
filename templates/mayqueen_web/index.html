@@ -1,95 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>MayQueen Studio</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<title>Bootstrap Site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<!--begin nav-->
 
-    <script src="/static/bootstrap/js/jquery.min.js"></script>
-    <script src="/static/bootstrap/js/bootstrap-dropdown.js"></script>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+          		</button>
+          		<a class="navbar-brand logo" href="#">MAYQUEEN TEK</a>
+			</div>
+			<div class="collapse navbar-collapse">
 
-    <script type='text/javascript'>
-    $(document).ready(function(){
-      $('#topbar').dropdown();
-    });
-    </script>
+				<ul class="nav navbar-nav navbar-right">
+            		<li class="active"><a href="#">首頁</a></li>
+            		<li><a href="#pages">關於我們</a></li>
+            		<li><a href="#features">產品列表</a></li>
+            		<li><a href="#portfolio">最新消息</a></li>
+            		<li><a href="#blog">聯絡我們</a></li>
+            		<li><a href="#contact">加入我們</a></li>
+          		</ul>
 
-    <!-- Le styles -->
-    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-      }
-    </style>
+			</div>
+		</div>
+	</div>
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-touch-icon-114x114.png">
-  </head>
+	<!-- End of navbar-->
+<div class="topmargin">
+	<img src="/static/images/sample/company.jpg" class="topimg">
+</div>
+	
+<div class="container bottompad toppad">
+	<div class="col-md-4">
+		<div class="col-xs-2">
+			<h1><span class="glyphicon glyphicon-briefcase"></h1>
+		</div>
+		<div class="col-xs-10">
+			<h2></span>We're Serious</h2>
+		</div>
+		<div class="col-md-12">
+			<p>Briefcases mean that we're doing important work. REALLY important work. Don't you want to be part of our important work, too? Now seeking briefcase-toting friends to join us!</p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="col-xs-2">
+			<h1><span class="glyphicon glyphicon-floppy-disk"></h1>
+		</div>
+		<div class="col-xs-10">
+			<h2></span>Floppy Disks?</h2>
+		</div>
+		<div class="col-md-12">
+			<p>We don't need no floppy disks! We remember them, sure. Remember when you got video games on, like, four floppy disks? Those were the days.</p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="col-xs-2">
+			<h1><span class="glyphicon glyphicon-map-marker"></h1>
+		</div>
+		<div class="col-xs-10">
+			<h2></span>You Are Here</h2>
+		</div>
+		<div class="col-md-12">
+			<p>Listen, we're a big company, but we're also small. How does that work? We don't know, so you'll have to tell us. But we'll be there. Like the Jackson 5.</p>
+		</div>
+	</div>
+</div>
 
-  <body>
 
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="/">MayQueen</a>
-          <ul class="nav">
-            <li class="active"><a href="/">首頁</a></li>
-            <li ><a href="/goods">產品列表</a></li>
-          </ul>
-          <form action="" class="pull-right">
-            <input class="input-small" type="text" placeholder="Username">
-            <input class="input-small" type="password" placeholder="Password">
-            <button class="btn" type="submit">VIP 登入</button>
-          </form>
-        </div>
-      </div>
+<div class="container bottompad">
+		<h2 class="underline">Current Projects</h2>
+	<div class="col-xs-2">
+		<a href="http://flic.kr/p/edQaJz"><img src="/static/images/sample/chicago2.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Chicago skyline"></a>
+	</div>
+	<div class="col-xs-2">
+		<a href="http://flic.kr/p/eftt6R"><img src="/static/images/sample/chicago1.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Chicago from Willis Tower"></a>
+	</div>
+	<div class="col-xs-2">
+		<a href="http://flic.kr/p/e6TjS3"><img src="/static/images/sample/onion.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Onion Ring Awareness Day"></a>
+	</div>
+	<div class="col-xs-2">
+		<a href="http://flic.kr/p/hEoLW6"><img src="/static/images/sample/cookie.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Fortune Cookie"></a>
+	</div>
+	<div class="col-xs-2">
+		<a href="http://flic.kr/p/fQkdYv"><img src="/static/images/sample/wings.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Wings on wings"></a>
+	</div>
+	<div class="col-xs-2">
+		<a href="http://flic.kr/p/fYsEP6"><img src="/static/images/sample/infinity.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Disney Infinity"></a>
+	</div>
+</div>
+
+<div class="container bottompad">
+<h2 class="underline">Testimonials</h2>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <h3>"This is the most awesome company in the history of companies." - Chenelle O. Vator</h3>
     </div>
+    <div class="item">
+      <h3>"You know what? They're alright." - Gladys Q. Beans</h3>
+    </div>
+    <div class="item">
+      <h3>"I was told there would be cake." - Marie N. Twanette</h3>
+    </div>
+  </div>
 
-    <div class="container">
+</div>
+</div>
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <img class='pull-right' src='https://dl.dropboxusercontent.com/u/70208644/images/official/home/home.jpg' alt=''/>
-        <h2>最新消息</h2>
-        <p>賀!2014/10月周年慶特賣會MQ自產平板電腦全數賣光!謝謝大家給予我們支持與鼓勵,我們也會繼續在3C與服飾這兩塊產業繼續耕耘與茁壯!</p>
-        <p>安卓平板電腦,多媒體播放器,迷你電腦,各式服飾持續熱賣中!</p>
-        <p><a class="btn primary large" href="/news">點選我看更多消息 &raquo;</a></p>
-      </div>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span6">
-          <h2>關於MQ <img src='/static/images/sample/icon1.png' alt=''/></h2>
-          <p>MayQueen Studio成立於2014年,是一間專注於軟體研發與3C產品開發工作室,我們以品質優良的服務為核心，加上先進的數位開發技術，發展出不易超越的競爭優勢，本工作室經營團隊結合了海內外知名公司的研發、市場、營運的菁英，目前正處於快速成長期，我們期許為此產業的明日之星，並朝服務客戶至上的理念邁進。</p>
-          <p><a class="btn" href="/team">看經營團隊 &raquo;</a></p>
-        </div>
-        <div class="span5">
-          <h2>技術支援 <img src='/static/images/sample/icon2.png' alt=''/> </h2>
-          <p>1. 產品相關文件, 2. 軟體更新, 3. 硬體規格</p>
-          <p>通通都可以在這裡找到喔!!歡迎來到MQ WIKI資料庫中心尋找您要的資訊.</p>
-          <p><a class="btn" href="http://54.65.121.155:8080">看詳細資料 &raquo;</a></p>
-       </div>
-        <div class="span5">
-          <h2>與MQ連繫 <img src='/static/images/sample/icon3.png' alt=''/> </h2>
-          <p>想購買商品或有疑難雜症想連繫我們,都可以在這裡找到相關資訊喔!</p>
-          <p><a class="btn" href="/contact">看詳細資訊 &raquo;</a></p>
-        </div>
-      </div>
+<div class="bottom">
+<div class="container">
+	<div class="col-md-4">
+		<h2 class="underline">About</h2>
+		<p>We are a totally made-up company for this demo page. I mean, come on, we're called "The Company".</p>
+		<h2 class="underline">Updates</h2>
+		<p>Sign up for The Company updates!</p>
+		<div class="input-group">
+      		<input type="text" class="form-control" placeholder="Email">
+      		<span class="input-group-btn">
+        		<button class="btn btn-default" type="button">Sign Up</button>
+      		</span>
+    	</div>
+	</div>
+	<div class="col-md-4">
+		<h2 class="underline">Connect with us</h2>
+		<img src="/static/images/sample/facebook.svg" class="icos">
+		<img src="/static/images/sample/twitter.svg" class="icos">
+		<img src="/static/images/sample/rss.svg" class="icos">
+		<img src="/static/images/sample/google.svg" class="icos">
+		<img src="/static/images/sample/pinterest.svg" class="icos">
+		<img src="/static/images/sample/vimeo.svg" class="icos">
+		<img src="/static/images/sample/linkedin.svg" class="icos">
+	</div>
+	<div class="col-md-4">
+		<h2 class="underline">Contact Us</h2>
+		<p>The Cupboard Under the Stairs<br>
+		4 Privet Drive<br>
+		Little Whinging<br>
+		Surrey</p>
+	</div>
+</div>
+</div>
 
-      <footer>
-        <p>&copy; Author 2014 By Wig C.</a></p>
-      </footer>
+<div class="waybottom">
+	<div class="container">
+		<p>This is a portfolio page.</p>
+		<p>Header image by <a href="http://flic.kr/p/9RebHS">Sebastiaan ter Burg</a> on Flickr, licensed under Creative Commons.<br>
+		All other images belong to Mary Knize.</p>
+	</div>
+</div>
 
-    </div> <!-- /container -->
 
-  </body>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/static/bootstrap/js/bootstrap.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.project').tooltip()
+	});
+</script>
+
+</body>
+
 </html>
