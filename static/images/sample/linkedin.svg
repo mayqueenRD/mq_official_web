@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32px"
+   height="32px"
+   id="svg4438"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="vimeo.svg">
+  <defs
+     id="defs4440" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.598901"
+     inkscape:cx="16"
+     inkscape:cy="16"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1050"
+     inkscape:window-height="644"
+     inkscape:window-x="50"
+     inkscape:window-y="50"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata4443">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="M 5 -0.15625 C 2.23 -0.15625 -3.8684334e-018 2.07375 0 4.84375 L 0 27.1875 C 0 29.9575 2.23 32.1875 5 32.1875 L 27.3125 32.1875 C 30.0825 32.1875 32.3125 29.9575 32.3125 27.1875 L 32.3125 4.84375 C 32.3125 2.07375 30.0825 -0.15625 27.3125 -0.15625 L 5 -0.15625 z M 8.03125 6.09375 C 8.7952147 6.1079988 9.3800082 6.3256226 9.8125 6.75 C 10.244983 7.1744134 10.486045 7.7112181 10.5 8.375 C 10.498321 9.0270952 10.284045 9.5705968 9.84375 10 C 9.4034456 10.429433 8.7784742 10.64036 8 10.65625 L 7.96875 10.65625 C 7.2167775 10.640359 6.6197073 10.429432 6.1875 10 C 5.7552915 9.570597 5.5398998 9.0270952 5.53125 8.375 C 5.5412945 7.7112181 5.773427 7.1744134 6.21875 6.75 C 6.6640716 6.3256226 7.2711861 6.1079988 8.03125 6.09375 z M 21.03125 12.15625 C 22.514246 12.150681 23.720663 12.646195 24.65625 13.625 C 25.591798 14.603827 26.06387 16.126078 26.09375 18.15625 L 26.09375 25.75 L 21.6875 25.75 L 21.6875 18.65625 C 21.693901 17.751939 21.541007 17.009786 21.1875 16.46875 C 20.833961 15.927731 20.259211 15.66993 19.46875 15.65625 C 18.861301 15.673837 18.371368 15.83566 18 16.15625 C 17.628606 16.476857 17.346253 16.83733 17.1875 17.25 C 17.134478 17.399006 17.11662 17.564177 17.09375 17.75 C 17.07086 17.935836 17.06193 18.141184 17.0625 18.34375 L 17.0625 25.75 L 12.65625 25.75 C 12.67306 21.799846 12.688485 18.876207 12.6875 16.96875 C 12.6865 15.061308 12.66315 13.821122 12.65625 13.25 C 12.64935 12.678901 12.657234 12.4099 12.65625 12.46875 L 17.0625 12.46875 L 17.0625 14.34375 C 17.3347 13.872248 17.755338 13.399768 18.34375 12.9375 C 18.956753 12.455917 19.857381 12.19254 21.03125 12.15625 z M 5.78125 12.46875 L 10.21875 12.46875 L 10.21875 25.75 L 5.78125 25.75 L 5.78125 12.46875 z "
+       id="rect4446" />
+    <g
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+       id="text4448" />
+  </g>
+</svg>
