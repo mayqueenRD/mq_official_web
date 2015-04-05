@@ -1,226 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>MayQueen</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script src="/static/bootstrap/js/jquery.min.js"></script>
-    <script src="/static/bootstrap/js/bootstrap-dropdown.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
 
-    <script type='text/javascript'>
-    $(document).ready(function(){
-      $('#topbar').dropdown();
-    });
-    </script>
+	<link rel="stylesheet" href="/static/team/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="/static/team/css/style.css"> <!-- Gem style -->
+	<script src="/static/team/js/modernizr.js"></script> <!-- Modernizr -->
 
-    <!-- Le styles -->
-    <link href="/static/css/effeckt.css" rel="stylesheet">
-    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
 
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-      }
-      .content-row div{
-        display:inline-block;
-        width:192px;
-      }
-      .content-row input.btn{
-        margin:auto;
-        font-weight:bold;
-        width:100%;
-      }
-      img.content-thumbnail{
-        width:100%;
-      }
-      .title{
-        font-weight:bold;
-        font-size:18pt;
-        text-align:center;
-      }
-      .current-price{
-        color:#000079;
-        font-weight:bold;
-        font-size:22pt;
-        text-align:center;
-      }
-      .time-left{
-        color:#468847;
-        font-weight:bold;
-        font-size:18pt;
-        text-align:center;
-      }
-    </style>
+	<title>About Us</title>
+</head>
+<body>
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-touch-icon-114x114.png">
-  </head>
-
-  <body>
-
-  <div class="effeckt-wrap effeckt-modal-wrap" id="effeckt-modal-wrap-king"> <!-- for centering transform -->
-    <div class="effeckt-content effeckt-modal" id="effeckt-modal">
-      <h3>Fada Kuo 董事長</h3>
-      <div class="effeckt-modal-content">
-        <p>經歷:</p>
-        <p>高雄第一科大電通系</p>
-        <p>中國天貓 JSMIX 總經理</p>
-        <p>中國天貓 BEMAX 品牌總監</p>
-        <button class="effeckt-modal-close">關閉!</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="effeckt-wrap effeckt-modal-wrap" id="effeckt-modal-wrap-q"> <!-- for centering transform -->
-    <div class="effeckt-content effeckt-modal" id="effeckt-modal">
-      <h3>David Liu 品牌總監</h3>
-      <div class="effeckt-modal-content">
-        <p>經歷:</p>
-        <p>高雄海洋科大電訊系</p>
-        <p>信義房屋 業務</p>
-        <p>仁寶電腦 品保工程師</p>
-        <button class="effeckt-modal-close">關閉!</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="effeckt-wrap effeckt-modal-wrap" id="effeckt-modal-wrap-can"> <!-- for centering transform -->
-    <div class="effeckt-content effeckt-modal" id="effeckt-modal">
-      <h3>Watson Wang 業務總監</h3>
-      <div class="effeckt-modal-content">
-        <p>經歷:</p>
-        <p>高雄海洋科大電訊系</p>
-        <p>南亞科技 良率品保工程師</p>
-        <button class="effeckt-modal-close">關閉!</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="effeckt-wrap effeckt-modal-wrap" id="effeckt-modal-wrap-wig"> <!-- for centering transform -->
-    <div class="effeckt-content effeckt-modal" id="effeckt-modal">
-      <h3>Wig Cheng 品牌公關</h3>
-      <div class="effeckt-modal-content">
-        <p>經歷:</p>
-        <p>高雄第一科大電通所</p>
-        <p>工研院 Rafael 客服工程師</p>
-        <p>港商聖馬丁 軟體工程師</p>
-        <p>台林電通 資深工程師</p>
-        <button class="effeckt-modal-close">關閉!</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="effeckt-wrap effeckt-modal-wrap" id="effeckt-modal-wrap-carl"> <!-- for centering transform -->
-    <div class="effeckt-content effeckt-modal" id="effeckt-modal">
-      <h3>Carl Chang R&D</h3>
-      <div class="effeckt-modal-content">
-        <p>經歷:</p>
-        <p>雲林科大通訊所</p>
-        <p>港商聖馬丁 軟體工程師</p>
-        <p>揚智科技 資深客服工程師</p>
-        <button class="effeckt-modal-close">關閉!</button>
-      </div>
-    </div>
-  </div>
-
-    <div class="topbar">
-      <div class="fill">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-          <a class="brand" href=#>經營團隊</a>
-          <ul class="nav">
-            <li><a href="/">回首頁</a></li>
-          </ul>
-        </form>
-
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            <a class="navbar-brand logo" href="#">MAYQUEEN TEK</a>
+            </div>
+            <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">{{home}}</a></li>
+                <li class="active"><a href="/team">{{about_us}}</a></li>
+                <li><a href="#features">{{product}}</a></li>
+                <li><a href="#portfolio">{{news}}</a></li>
+                <li><a href="#blog">{{contact}}</a></li>
+                <li><a href="#contact">{{join}}</a></li>
+            </ul>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="container">
 
-      <div class='cleaner'></div>
-      <h1>MQ管理團隊</h1>
+	<main>
+		<section id="cd-team" class="cd-section">
+			<div class="cd-container">
+				<h2>Our team</h2>
+				<ul>
+					<li>
+						<a href="#0" data-type="member-1">
+							<figure>
+								<img src="/static/team/img/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Detail</span></div>
+							</figure>
 
-    <div class='span16'>
-        <div class='content-row'>
-          <div class='well'>
-            <img src='/static/images/sample/fafa.jpg' class='content-thumbnail'/>
-            <div class='cleaner'></div>
-            <div class='title'>董事長</div>
-            <div class='cleaner'></div>
-            <div class='current-price'>FaFa</div>
-            <div class='cleaner'></div>
-            <div align="center"> <input type='button' class='effeckt-modal-button' data-id='king' data-effeckt-type="from-below" value='詳細介紹'/> </div>
-        </div>
-          <div class='well'>
-            <img src='/static/images/sample/q.jpg' class='content-thumbnail'/>
-            <div class='cleaner'></div>
-            <div class='title'>品牌總監</div>
-            <div class='cleaner'></div>
-            <div class='current-price'>David</div>
-            <div class='cleaner'></div>
-            <div align="center"> <input type='button' class='effeckt-modal-button' data-id='q'  data-effeckt-type="from-below" value='詳細介紹'/> </div>
-          </div>
-          <div class='well'>
-            <img src='/static/images/sample/watson.jpg' class='content-thumbnail'/>
-            <div class='cleaner'></div>
-            <div class='title'>業務總監</div>
-            <div class='cleaner'></div>
-            <div class='current-price'>Watson</div>
-            <div class='cleaner'></div>
-            <div align="center"> <input type='button' class='effeckt-modal-button' data-id='can'  data-effeckt-type="from-below" value='詳細介紹'/> </div>
-        </div>
+							<div class="cd-member-info">
+								Fafa Kuo <span>CEO</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+					
+					<li>
+						<a href="#0" data-type="member-2">
+							<figure>
+								<img src="/static/team/img/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Detail</span></div>
+							</figure>
 
-        </div>
-      </div>
+							<div class="cd-member-info">
+								Watson Wang <span>Marketing</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
 
-    <div class="container">
+					<li>
+						<a href="#0" data-type="member-3">
+							<figure>
+								<img src="/static/team/img/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Detail</span></div>
+							</figure>
 
-      <div class='cleaner'></div>
-      <h1>MQ研發團隊</h1>
+							<div class="cd-member-info">
+								David Liu<span>Quality Assurance</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
 
-      <div class='span16'>
-        <div class='content-row'>
-          <div class='well'>
-            <img src='/static/images/sample/wig.jpg' class='content-thumbnail'/>
-            <div class='cleaner'></div>
-            <div class='title'>品牌公關</div>
-            <div class='cleaner'></div>
-            <div class='current-price'>Wig</div>
-            <div class='cleaner'></div>
-            <div align="center"> <input type='button' class='effeckt-modal-button' data-id='wig' data-effeckt-type="from-below" value='詳細介紹'/> </div>
-          </div>
+					<li>
+						<a href="#0" data-type="member-4">
+							<figure>
+								<img src="/static/team/img/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Detail</span></div>
+							</figure>
 
-          <div class='well'>
-            <img src='/static/images/sample/carl.jpg' class='content-thumbnail'/>
-            <div class='cleaner'></div>
-            <div class='title'>R&D</div>
-            <div class='cleaner'></div>
-            <div class='current-price'>Carl</div>
-            <div class='cleaner'></div>
-            <div align="center"> <input type='button' class='effeckt-modal-button'  data-id='carl' data-effeckt-type="from-below" value='詳細介紹'/> </div>
-          </div>
-        </div>
-      </div>
+							<div class="cd-member-info">
+								Wig Cheng <span>Software</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
 
-      <footer>
-        <p>&copy; Author 2014 by Wig C.</a></p>
-      </footer>
 
-    </div> <!-- /container -->
+				</ul>
+			</div> <!-- cd-container -->
+		</section> <!-- cd-team -->
 
-  </body>
+		<div class="cd-overlay"></div>
+	</main>
 
-    <script src="/static/js/core.js"></script>
-    <script src="/static/js/modal.js"></script>
-    <script src="/static/js/buttons.js"></script>
+	<div class="cd-member-bio member-1">
+		<div class="cd-member-bio-pict">
+			<img src="/static/team/img/member-bio-img-1.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
 
+		<div class="cd-bio-content">
+			<h1>Meet Fafa Kuo</h1>
+			<p>畢業於高雄第一科技大學</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-2">
+		<div class="cd-member-bio-pict">
+			<img src="/static/team/img/member-bio-img-2.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet Watson Wang</h1>
+			<p>畢業於高雄海洋科技大學</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-3">
+		<div class="cd-member-bio-pict">
+			<img src="/static/team/img/member-bio-img-3.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet David Liu</h1>
+			<p>畢業於高雄海洋科技大學</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-4">
+		<div class="cd-member-bio-pict">
+			<img src="/static/team/img/member-bio-img-3.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet Wig Cheng</h1>
+			<p>畢業於高雄第一科技大學</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<a href="#0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/static/team/js/main.js"></script> <!-- Gem jQuery -->
+</body>
 </html>

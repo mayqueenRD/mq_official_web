@@ -1,16 +1,99 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from flask import Flask, render_template, request
+import sqlite3
+import sys
 
 app = Flask(__name__)
 
-@app.route("/")
+reload(sys)  # Reload does the trick!
+sys.setdefaultencoding('UTF8')
+
+@app.route("/",methods=['GET' , 'POST'])
 def main():
-    return render_template('mayqueen_web/index.html')
+
+    item=20
+    the_lang='t_chinese'
+
+    if request.method == 'POST':
+        the_lang=request.form['thelang']
+
+    if the_lang == '繁體中文':
+        lang='t_chinese'
+    elif the_lang == 'English':
+        lang='eng'
+    elif the_lang == '简体中文':
+        lang='s_chinese'
+    else:
+        lang='t_chinese'
+
+    titles=["" for x in range(item)]
+    conn = sqlite3.connect('language.db') # or use :memory: to put it in RAM
+    cursor=conn.cursor()
+    for idx in range(0, item, 1):
+        cmd='select ' + lang +' from language where idx='+ str(idx)
+        a = cursor.execute(cmd)
+        titles[idx]=str(cursor.fetchone()[0])
+
+    templateData = {
+        'home' : titles[0],
+        'about_us' : titles[1],
+        'product' : titles[2],
+        'news' : titles[3],
+        'contact' : titles[4],
+        'join' : titles[5],
+        'creative_product' : titles[6],
+        'cp_description' : titles[7],
+        'perfect_service' : titles[8],
+        'ps_description' : titles[9],
+        'individual_platform' : titles[10],
+        'ip_description' : titles[11],
+        'hot_product' : titles[12],
+        'last_news' : titles[13],
+        'member_zone' : titles[14],
+        'login_msg' : titles[15],
+        'login' : titles[16],
+        'register_acc' : titles[17],
+        'community' : titles[18],
+        'change_lang' : titles[19]
+    }
+    return render_template('mayqueen_web/index.html',**templateData)
 
 @app.route("/team")
-def mobile():
-    return render_template('mayqueen_web/team.html')
+def team():
+
+    item=6
+    the_lang='t_chinese'
+
+    if request.method == 'POST':
+        the_lang=request.form['thelang']
+
+    if the_lang == '繁體中文':
+        lang='t_chinese'
+    elif the_lang == 'English':
+        lang='eng'
+    elif the_lang == '简体中文':
+        lang='s_chinese'
+    else:
+        lang='t_chinese'
+
+    titles=["" for x in range(item)]
+    conn = sqlite3.connect('team.db') # or use :memory: to put it in RAM
+    cursor=conn.cursor()
+    for idx in range(0, item, 1):
+        cmd='select ' + lang +' from team where idx='+ str(idx)
+        a = cursor.execute(cmd)
+        titles[idx]=str(cursor.fetchone()[0])
+
+    templateData = {
+        'home' : titles[0],
+        'about_us' : titles[1],
+        'product' : titles[2],
+        'news' : titles[3],
+        'contact' : titles[4],
+        'join' : titles[5],
+    }
+    return render_template('mayqueen_web/team.html',**templateData)
 
 @app.route("/news")
 def news():

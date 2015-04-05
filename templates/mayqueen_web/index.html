@@ -25,12 +25,12 @@
 			<div class="collapse navbar-collapse">
 
 				<ul class="nav navbar-nav navbar-right">
-            		<li class="active"><a href="#">首頁</a></li>
-            		<li><a href="#pages">關於我們</a></li>
-            		<li><a href="#features">產品列表</a></li>
-            		<li><a href="#portfolio">新聞訊息</a></li>
-            		<li><a href="#blog">聯絡我們</a></li>
-            		<li><a href="#contact">加入我們</a></li>
+                    <li class="active"><a href="#">{{home}}</a></li>
+                    <li><a href="/team">{{about_us}}</a></li>
+                    <li><a href="#features">{{product}}</a></li>
+                    <li><a href="#portfolio">{{news}}</a></li>
+                    <li><a href="#blog">{{contact}}</a></li>
+                    <li><a href="#contact">{{join}}</a></li>
           		</ul>
 
 			</div>
@@ -48,11 +48,10 @@
 			<h1><span class="glyphicon glyphicon-briefcase"></h1>
 		</div>
 		<div class="col-xs-10">
-			<h2></span>創新產品</h2>
+            <h2></span>{{creative_product}}</h2>
 		</div>
 		<div class="col-md-12">
-            <p>MayQueen勵志成為全球最大設計及代理科技產品網站，擁有為數眾多的研發與管理人才，堅持只賣高品質的產品,獨一無二的產品!</p>
-            <p>目前已於2015年在台灣成立，跨足國際市場將逐步成為未來的營運重點，希望有天能站上國際舞台!</p>
+            <p>{{cp_description}}</p>
 		</div>
 	</div>
 	<div class="col-md-4">
@@ -60,12 +59,10 @@
 			<h1><span class="glyphicon glyphicon-floppy-disk"></h1>
 		</div>
 		<div class="col-xs-10">
-			<h2></span>好的產品</h2>
+            <h2></span>{{perfect_service}}</h2>
 		</div>
 		<div class="col-md-12">
-            1.各類CPU與Chip獨家代理並提供技術支援!<br>
-            2.各類開發板獨家代理!<br>
-            3.自有3C創意產品開發與販售!<br>
+            {{ps_description}}
 		</div>
 	</div>
 	<div class="col-md-4">
@@ -73,17 +70,17 @@
 			<h1><span class="glyphicon glyphicon-map-marker"></h1>
 		</div>
 		<div class="col-xs-10">
-			<h2></span>獨家平台</h2>
+            <h2></span>{{individual_platform}}</h2>
 		</div>
 		<div class="col-md-12">
-			<p>除了擁有官網可以提供下單外,也提供零售的部份,另外還提供Android,IOS雙平台APP供大家方便選購!</p>
+            <p>{{ip_description}}</p>
 		</div>
 	</div>
 </div>
 
 
 <div class="container bottompad">
-		<h2 class="underline">熱門產品</h2>
+    <h2 class="underline">{{hot_product}}</h2>
 	<div class="col-xs-2">
 		<a href="http://flic.kr/p/edQaJz"><img src="/static/images/sample/chicago2.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Chicago skyline"></a>
 	</div>
@@ -105,7 +102,7 @@
 </div>
 
 <div class="container bottompad">
-<h2 class="underline">最新消息</h2>
+    <h2 class="underline">{{last_news}}</h2>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -135,17 +132,17 @@
 <div class="bottom">
 <div class="container">
 	<div class="col-md-4">
-		<h2 class="underline">會員專區</h2>
-		<p>登入並享受會員的專屬服務</p>
+        <h2 class="underline">{{member_zone}}</h2>
+		<p>{{login_msg}}</p>
 		<div class="input-group">
             <p><input type="text" class="form-control" placeholder="Email"></p>
             <p><input type="text" class="form-control" placeholder="Password"></p>
-        	<button class="btn btn-default" type="button">登入</button>
-            <button class="btn btn-default" type="button">註冊帳號</button>
+            <button class="btn btn-default" type="button">{{login}}</button>
+            <button class="btn btn-default" type="button">{{register_acc}}</button>
     	</div>
 	</div>
 	<div class="col-md-4">
-		<h2 class="underline">社群管道</h2>
+        <h2 class="underline">{{community}}</h2>
 		<img src="/static/images/sample/facebook.svg" class="icos">
 		<img src="/static/images/sample/twitter.svg" class="icos">
 		<img src="/static/images/sample/rss.svg" class="icos">
@@ -155,10 +152,15 @@
 		<img src="/static/images/sample/linkedin.svg" class="icos">
 	</div>
 	<div class="col-md-4">
-		<h2 class="underline">切換語言</h2>
-        <a href="#">英文</a><br>
-        <a href="#">繁體中文</a><br>
-        <a href="#">簡體中文</a><br>
+        <h2 class="underline">{{change_lang}}</h2>
+        <form action="/" method="POST">
+        <select id="thelang" name="thelang" >
+        <option>繁體中文</option>
+        <option>English</option>
+        <option>简体中文</option>
+        <input type="submit" name="btn_lang" class ="btn-primary" value="確認">
+        </select>
+        </form>
 	</div>
 </div>
 </div>
