@@ -1,121 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>產品列表</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Goods</title>
+		<meta name="description" content="Blueprint: Responsive Product Grid Layout" />
+		<meta name="keywords" content="responsive, product grid, layout, elastic, grid, web development" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/static/goods/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="/static/goods/css/component.css" />
+		<script src="/static/goods/js/modernizr.custom.js"></script>
+        <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#">MAYQUEEN TEK</a>
+            </div>
+            <div class="collapse navbar-collapse">
 
-    <script src="/static/bootstrap/js/jquery.min.js"></script>
-    <script src="/static/bootstrap/js/bootstrap-dropdown.js"></script>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">{{home}}</a></li>
+                    <li><a href="/team">{{about_us}}</a></li>
+                    <li><a href="/goods">{{product}}</a></li>
+                    <li><a href="#portfolio">{{support}}</a></li>
+                    <li><a href="#portfolio">{{news}}</a></li>
+                    <li><a href="#blog">{{contact}}</a></li>
+                </ul>
 
-    <script type='text/javascript'>
-    $(document).ready(function(){
-      $('#topbar').dropdown();
-    });
-    </script>
-
-    <!-- Le styles -->
-    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-      }
-      .container-fluid > .content{
-        margin-left:10px;
-      }
-      .categories li{
-
-      }
-      .categories li:focus{
-
-      }
-      #main-items tbody tr td{
-        cursor:pointer !important;
-      }
-      .highlight td{
-        font-weight:bold;
-      }
-      td.mini-thumbnail img{
-        max-height:50px;
-        max-width:100px;
-      }
-      td.mini-thumbnail{
-        text-align:center;
-      }
-    </style>
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  </head>
-
-  <body>
-
-    <div class="topbar">
-      <div class="topbar-inner">
-        <div class="container-fluid">
-          <a class="brand" href=#>產品列表</a>
-          <ul class="nav">
-            <li><a href="/">回首頁</a></li>
-          </ul>
+            </div>
         </div>
-      </div>
     </div>
+    <br><br><br><br>
+		<div class="container">
+			<div id="cbp-pgcontainer" class="cbp-pgcontainer">
+				<ul class="cbp-pggrid">
+					<li>
+						<div class="cbp-pgcontent">
+							<span class="cbp-pgrotate">Rotate Item</span>
+							<div class="cbp-pgitem">
+								<div class="cbp-pgitem-flip">
+									<img src="/static/goods/images/1_front.png" />
+									<img src="/static/goods/images/1_back.png" />
+								</div>
+							</div><!-- /cbp-pgitem -->
+							<ul class="cbp-pgoptions">
+								<li class="cbp-pgoptcompare">Compare</li>
+								<li class="cbp-pgoptfav">Favorite</li>
+								<li class="cbp-pgoptsize">								
+									<span data-size="XL">HW</span>
+									<div class="cbp-pgopttooltip">
+										<span data-size="L">2B</span>
+										<span data-size="M">B+</span>
+										<span data-size="S">A+</span>
+									</div>
+								</li>
 
-    <div class="container-fluid">
-      <div class="content">
-        <ul class="breadcrumb">
-            <li class="active">熱門商品</li>
-        </ul>
-        <div class='cleaner'></div>
-        <table class='zebra-striped' id='main-items'>
-            <thead>
-                <tr>
-                    <th class='span2'></th>
-                    <th class='span4'>品名</th>
-                    <th class='span2'>價格</th>
-                    <th class='span2'>商品地點</th>
-                    <th class='span2'>剩餘數量</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class='clickableRow' href='http://goods.ruten.com.tw/item/show?21501199368869'>
-                    <td class='mini-thumbnail'><img src='https://dl.dropboxusercontent.com/u/70208644/images/official/goods/mq-imx6.jpg'/></td>
-                    <td>MQ-IMX6開發版</td>
-                    <td>$2590</td>
-                    <td>台北市</td>
-                    <td>2</td>
-                </tr>
-                <tr class='clickableRow' href='/pibox_show'>
-                    <td class='mini-thumbnail'><img src='https://dl.dropboxusercontent.com/u/70208644/images/official/goods/mq-pibox.jpg'/></td>
-                    <td>小屁盒 (官方主打款)</td>
-                    <td>$1490</td>
-                    <td>桃園市</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td class='mini-thumbnail'><img src='https://dl.dropboxusercontent.com/u/70208644/images/official/goods/mq-kid00.jpg'/></td>
-                    <td>MQ-KID01兒童平板電腦</td>
-                    <td>$990</td>
-                    <td>桃園市</td>
-                    <td>缺貨中</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <footer>
-          <p>&copy; Author 2014 By Wig C.</p>
-        </footer>
-      </div>
-    </div>
-
-  </body>
+ 								<li class="cbp-pgoptsize">								
+									<span data-size="XL">OS</span>
+									<div class="cbp-pgopttooltip">
+										<span data-size="L">Raspbian</span>
+										<span data-size="M">Ubuntu</span>
+										<span data-size="S">XBMC</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcart"></li>
+							</ul><!-- cbp-pgoptions -->
+						</div><!-- cbp-pgcontent -->
+						<div class="cbp-pginfo">
+							<h3>Raspberry PI</h3>
+							<span class="cbp-pgprice">$29</span>
+						</div>
+					</li>
+					<li>
+						<div class="cbp-pgcontent">
+							<span class="cbp-pgrotate">Rotate Item</span>
+							<div class="cbp-pgitem">
+								<div class="cbp-pgitem-flip">
+									<img src="/static/goods/images/2_front.png" />
+									<img src="/static/goods/images/2_back.png" />
+								</div>
+							</div><!-- /cbp-pgitem -->
+							<ul class="cbp-pgoptions">
+								<li class="cbp-pgoptcompare">Compare</li>
+								<li class="cbp-pgoptfav">Favorite</li>
+								<li class="cbp-pgoptsize">								
+									<span data-size="XL">XL</span>
+									<div class="cbp-pgopttooltip">
+										<span data-size="XL">XL</span>
+										<span data-size="L">L</span>
+										<span data-size="M">M</span>
+										<span data-size="S">S</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcolor">
+									<span data-color="c2">Pink</span>
+									<div class="cbp-pgopttooltip">
+										<span data-color="c1">Blue</span>
+										<span data-color="c2">Pink</span>
+										<span data-color="c3">Orange</span>
+										<span data-color="c4">Green</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcart"></li>
+							</ul>
+						</div>
+						<div class="cbp-pginfo">
+							<h3>Nature Lover</h3>
+							<span class="cbp-pgprice">$19</span>
+						</div>
+					</li>
+					<li>
+						<div class="cbp-pgcontent">
+							<span class="cbp-pgrotate">Rotate Item</span>
+							<div class="cbp-pgitem">
+								<div class="cbp-pgitem-flip">
+									<img src="/static/goods/images/3_front.png" />
+									<img src="/static/goods/images/3_back.png" />
+								</div>
+							</div><!-- /cbp-pgitem -->
+							<ul class="cbp-pgoptions">
+								<li class="cbp-pgoptcompare">Compare</li>
+								<li class="cbp-pgoptfav">Favorite</li>
+								<li class="cbp-pgoptsize">								
+									<span data-size="XL">XL</span>
+									<div class="cbp-pgopttooltip">
+										<span data-size="XL">XL</span>
+										<span data-size="L">L</span>
+										<span data-size="M">M</span>
+										<span data-size="S">S</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcolor">
+									<span data-color="c3">Orange</span>
+									<div class="cbp-pgopttooltip">
+										<span data-color="c1">Blue</span>
+										<span data-color="c2">Pink</span>
+										<span data-color="c3">Orange</span>
+										<span data-color="c4">Green</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcart"></li>
+							</ul>
+						</div>
+						<div class="cbp-pginfo">
+							<h3>Forrest Walk</h3>
+							<span class="cbp-pgprice">$39</span>
+						</div>
+					</li>
+					<li>
+						<div class="cbp-pgcontent">
+							<span class="cbp-pgrotate">Rotate Item</span>
+							<div class="cbp-pgitem">
+								<div class="cbp-pgitem-flip">
+									<img src="/static/goods/images/4_front.png" />
+									<img src="/static/goods/images/4_back.png" />
+								</div>
+							</div><!-- /cbp-pgitem -->
+							<ul class="cbp-pgoptions">
+								<li class="cbp-pgoptcompare">Compare</li>
+								<li class="cbp-pgoptfav">Favorite</li>
+								<li class="cbp-pgoptsize">								
+									<span data-size="XL">XL</span>
+									<div class="cbp-pgopttooltip">
+										<span data-size="XL">XL</span>
+										<span data-size="L">L</span>
+										<span data-size="M">M</span>
+										<span data-size="S">S</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcolor">
+									<span data-color="c4">Green</span>
+									<div class="cbp-pgopttooltip">
+										<span data-color="c1">Blue</span>
+										<span data-color="c2">Pink</span>
+										<span data-color="c3">Orange</span>
+										<span data-color="c4">Green</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcart"></li>
+							</ul>
+						</div>
+						<div class="cbp-pginfo">
+							<h3>Land of Trees</h3>
+							<span class="cbp-pgprice">$35</span>
+						</div>
+					</li>
+					<li>
+						<div class="cbp-pgcontent">
+							<span class="cbp-pgrotate">Rotate Item</span>
+							<div class="cbp-pgitem">
+								<div class="cbp-pgitem-flip">
+									<img src="/static/goods/images/3_front.png" />
+									<img src="/static/goods/images/3_back.png" />
+								</div>
+							</div><!-- /cbp-pgitem -->
+							<ul class="cbp-pgoptions">
+								<li class="cbp-pgoptcompare">Compare</li>
+								<li class="cbp-pgoptfav">Favorite</li>
+								<li class="cbp-pgoptsize">								
+									<span data-size="XL">XL</span>
+									<div class="cbp-pgopttooltip">
+										<span data-size="XL">XL</span>
+										<span data-size="L">L</span>
+										<span data-size="M">M</span>
+										<span data-size="S">S</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcolor">
+									<span data-color="c3">Orange</span>
+									<div class="cbp-pgopttooltip">
+										<span data-color="c1">Blue</span>
+										<span data-color="c2">Pink</span>
+										<span data-color="c3">Orange</span>
+										<span data-color="c4">Green</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcart"></li>
+							</ul>
+						</div>
+						<div class="cbp-pginfo">
+							<h3>Tree Shirt</h3>
+							<span class="cbp-pgprice">$29</span>
+						</div>
+					</li>
+					<li>
+						<div class="cbp-pgcontent">
+							<span class="cbp-pgrotate">Rotate Item</span>
+							<div class="cbp-pgitem">
+								<div class="cbp-pgitem-flip">
+									<img src="/static/goods/images/1_front.png" />
+									<img src="/static/goods/images/1_back.png" />
+								</div>
+							</div><!-- /cbp-pgitem -->
+							<ul class="cbp-pgoptions">
+								<li class="cbp-pgoptcompare">Compare</li>
+								<li class="cbp-pgoptfav">Favorite</li>
+								<li class="cbp-pgoptsize">								
+									<span data-size="XL">XL</span>
+									<div class="cbp-pgopttooltip">
+										<span data-size="XL">XL</span>
+										<span data-size="L">L</span>
+										<span data-size="M">M</span>
+										<span data-size="S">S</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcolor">
+									<span data-color="c1">Blue</span>
+									<div class="cbp-pgopttooltip">
+										<span data-color="c1">Blue</span>
+										<span data-color="c2">Pink</span>
+										<span data-color="c3">Orange</span>
+										<span data-color="c4">Green</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcart"></li>
+							</ul>
+						</div>
+						<div class="cbp-pginfo">
+							<h3>Greenhouse</h3>
+							<span class="cbp-pgprice">$19</span>
+						</div>
+					</li>
+				</ul><!-- /cbp-pggrid -->
+			</div><!-- /cbp-pgcontainer -->
+		</div>
+		<script src="/static/goods/js/cbpShop.min.js"></script>
+		<script>
+			var shop = new cbpShop( document.getElementById( 'cbp-pgcontainer' ) ); 
+		</script>
+	</body>
 </html>
