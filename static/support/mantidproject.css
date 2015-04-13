@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0efe7 url(body.jpg);
+}
+
+#banner {
+  border: 0;
+  margin: 0;
+  background-color: #F7F7F7;
+  background-repeat: repeat-x;
+  height: 92px;
+}
+
+#mail-link {
+  margin-top: 35px;
+  margin-right: 10px;
+  float: right;
+  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif;
+  font-weight:normal;
+  font-size: 93%;
+  line-height: 1em;
+}
+
+#logo {
+  width: 138px;
+  height:81px;
+  margin-top: 10px;
+  margin-left: 3%;
+}
+
+h1,h2,h3,h4,h5,p{
+  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif;
+  font-weight:normal;
+  line-height: 1em;
+}
+
+h1{
+  font-size: 160%;
+  color: #234764;
+  margin: 0.7em 0 0.7em 0;
+  text-decoration: none;
+}
+
+h2{
+  font-size: 140%;
+  color: #366D9C;
+  margin: 0.7em 0 0.7em 0;
+}
+
+h3 {
+  font-size: 135%;
+  color: #366D9C;
+  margin: 0.4em 0 0.0em 0;
+}
+
+h4 {
+  font-size: 125%;
+  color: #366D9C;
+  margin: 0.4em 0 0.0em 0;
+}
+
+.content{
+  background-color: #FFF;
+  border:1px solid;
+  border-radius: 15px;
+  padding-left: 3em;
+  padding-bottom: 1.5em;
+  margin-top:10px;
+  margin-left: 17%;
+  margin-right: 13%;
+}
+
+.content p {
+  width: 95%;
+}
+
+.release-table {
+  width: 95%;
+}
+
+#dev-title {
+  color: #F51432;
+  margin-top: 1.5em;
+}
+
+#src-title {
+  color: #366D9C;
+  margin-top: 1.5em;
+}
+
+/* Side-bar */
+#left-navigation {
+  position: absolute;
+  background-color: #FFF;
+  margin-top: 15px;
+  margin-left: 6px;
+  padding-left: 5px;
+  width: 175px;
+  border-radius: 5px;
+}
+
+#left-navigation p {
+  color: #366D9C;  
+  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif;
+  font-weight:normal;
+}

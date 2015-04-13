@@ -35,6 +35,8 @@ def main():
         a = cursor.execute(cmd)
         titles[idx]=str(cursor.fetchone()[0])
 
+    conn.close
+
     templateData = {
         'home' : titles[0],
         'about_us' : titles[1],
@@ -85,6 +87,8 @@ def team():
         a = cursor.execute(cmd)
         titles[idx]=str(cursor.fetchone()[0])
 
+    conn.close
+
     templateData = {
         'home' : titles[0],
         'about_us' : titles[1],
@@ -98,6 +102,44 @@ def team():
 @app.route("/news")
 def news():
     return render_template('mayqueen_web/news.html')
+
+@app.route("/support")
+def support():
+
+    item=6
+    the_lang='t_chinese'
+
+    if request.method == 'POST':
+        the_lang=request.form['thelang']
+
+    if the_lang == '繁體中文':
+        lang='t_chinese'
+    elif the_lang == 'English':
+        lang='eng'
+    elif the_lang == '简体中文':
+        lang='s_chinese'
+    else:
+        lang='t_chinese'
+
+    titles=["" for x in range(item)]
+    conn = sqlite3.connect('menu.db') # or use :memory: to put it in RAM
+    cursor=conn.cursor()
+    for idx in range(0, item, 1):
+        cmd='select ' + lang +' from menu where idx='+ str(idx)
+        a = cursor.execute(cmd)
+        titles[idx]=str(cursor.fetchone()[0])
+
+    conn.close
+
+    templateData = {
+        'home' : titles[0],
+        'about_us' : titles[1],
+        'product' : titles[2],
+        'support' : titles[3],
+        'news' : titles[4],
+        'contact' : titles[5],
+    }
+    return render_template('mayqueen_web/support.html',**templateData)
 
 @app.route("/contact")
 def contact():
@@ -122,12 +164,14 @@ def goods():
         lang='t_chinese'
 
     titles=["" for x in range(item)]
-    conn = sqlite3.connect('team.db') # or use :memory: to put it in RAM
+    conn = sqlite3.connect('menu.db') # or use :memory: to put it in RAM
     cursor=conn.cursor()
     for idx in range(0, item, 1):
-        cmd='select ' + lang +' from team where idx='+ str(idx)
+        cmd='select ' + lang +' from menu where idx='+ str(idx)
         a = cursor.execute(cmd)
         titles[idx]=str(cursor.fetchone()[0])
+
+    conn.close
 
     templateData = {
         'home' : titles[0],
@@ -139,9 +183,56 @@ def goods():
     }
     return render_template('mayqueen_web/goods.html',**templateData)
 
-@app.route("/pibox_show")
-def pibox_show():
-    return render_template('mayqueen_web/pibox_show.html')
+@app.route("/detail")
+def goods_detail():
+
+    item=6
+    the_lang='t_chinese'
+
+    if request.method == 'POST':
+        the_lang=request.form['thelang']
+
+    if the_lang == '繁體中文':
+        lang='t_chinese'
+    elif the_lang == 'English':
+        lang='eng'
+    elif the_lang == '简体中文':
+        lang='s_chinese'
+    else:
+        lang='t_chinese'
+
+    titles=["" for x in range(item)]
+    conn = sqlite3.connect('goods_detail.db') # or use :memory: to put it in RAM
+    cursor=conn.cursor()
+    for idx in range(0, item, 1):
+        cmd='select ' + lang +' from menu where idx='+ str(idx)
+        a = cursor.execute(cmd)
+        titles[idx]=str(cursor.fetchone()[0])
+
+    detail_idx = str(request.args)[22]
+
+    cmd='select img from goods_detail where idx=' + detail_idx
+    a = cursor.execute(cmd)
+    image=str(cursor.fetchone()[0])
+
+    cmd='select spec from goods_detail where idx=' + detail_idx
+    a = cursor.execute(cmd)
+    spec=str(cursor.fetchone()[0])
+
+    conn.close
+
+    templateData = {
+        'home' : titles[0],
+        'about_us' : titles[1],
+        'product' : titles[2],
+        'support' : titles[3],
+        'news' : titles[4],
+        'contact' : titles[5],
+        'image' : image,
+        'spec' : spec
+    }
+
+    return render_template('mayqueen_web/goods_detail.html',**templateData)
 
 
 if __name__ == '__main__':

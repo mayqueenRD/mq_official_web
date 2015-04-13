@@ -11,29 +11,55 @@ other techniques. The framework is open source and supported on multiple target 
 <title>Mantid - High Performance Computing & Visualisation</title>
 
 <link rel="icon" type="image/png" href="MantidPlot_Icon_32offset.ico"/>
-<link rel="stylesheet" type="text/css" href="mantidproject.css"/>
+<link rel="stylesheet" type="text/css" href="/static/support/mantidproject.css"/>
+
+<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
 
-<div id="banner">
-  <img id="logo" src="Mantid_Logo_Transparent.png" alt="Mantid logo"/></a>
-  <p id="mail-link">Please sign up to the<br>
-  <a href='http://lists.mantidproject.org/mailman/listinfo/mantid-announce'>mantid-announce</a> mailing list<br>
-  to be  notified of new releases.
-  </p>
-</div>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#">MAYQUEEN TEK</a>
+            </div>
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">{{home}}</a></li>
+                    <li><a href="/team">{{about_us}}</a></li>
+                    <li class="active"><a href="/goods">{{product}}</a></li>
+                    <li><a href="#portfolio">{{support}}</a></li>
+                    <li><a href="#portfolio">{{news}}</a></li>
+                    <li><a href="#blog">{{contact}}</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+<br><br><br><br>
 
 <div id="left-navigation">
- <p>Sample ISIS Data</p>
- <p>Sample SNS Data</p>
+ <p>Raspberry PI</p>
+ <p>BeagleBone Black</p>
+ <p>PI-CAR Recorder</p>
+
 </div>
 
 <div class="content">
-  <h2>Mantid 2.4</h2>
+  <h2>Raspberry PI</h2>
   <p>Release Date: 02 Feb 2013</p>
   <p><a href="http://www.mantidproject.org/Release_Notes2.4">Release Notes</a></p>
-  
+
  <table bgcolor="#000000" cellspacing="1"  class="release-table">
   <tbody>
   <tr>
