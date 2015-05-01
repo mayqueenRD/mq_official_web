@@ -1,24 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="Keywords" content="Mantid, ParaView, Vates" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Support</title>
 
-<meta name="Description" content="The Mantid project provides a framework that supports high-performance computing and visualisation 
-of scientific data. Mantid has been created to manipulate and analyse Neutron and Muon scattering data, but could be applied to many 
-other techniques. The framework is open source and supported on multiple target platforms (Windows, Linux, Mac)."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mantid - High Performance Computing & Visualisation</title>
+    <script src="/static/bootstrap/js/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/scripts/bootstrap-dropdown.js"></script>
 
-<link rel="icon" type="image/png" href="MantidPlot_Icon_32offset.ico"/>
-<link rel="stylesheet" type="text/css" href="/static/support/mantidproject.css"/>
+    <script type='text/javascript'>
+    $(document).ready(function(){
+      $('#topbar').dropdown();
+    });
+    </script>
 
-<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
+    <!-- Le styles -->
+    <STYLE TYPE="text/css">
+        @import url("/static/bootstrap/css/bootstrap.min.css");
+    </STYLE>
 
-</head>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
 
-<body>
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+    <!--begin nav-->
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -36,170 +50,38 @@ other techniques. The framework is open source and supported on multiple target 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/">{{home}}</a></li>
                     <li><a href="/team">{{about_us}}</a></li>
-                    <li class="active"><a href="/goods">{{product}}</a></li>
-                    <li><a href="#portfolio">{{support}}</a></li>
-                    <li><a href="#portfolio">{{news}}</a></li>
-                    <li><a href="#blog">{{contact}}</a></li>
+                    <li><a href="/goods">{{product}}</a></li>
+                    <li class="active"><a href="/support">{{support}}</a></li>
+                    <li><a href="/news">{{news}}</a></li>
+                    <li><a href="/contact">{{contact}}</a></li>
                 </ul>
 
             </div>
         </div>
     </div>
 
-<br><br><br><br>
+    <!-- End of navbar-->
+    <br><br><br><br>
 
-<div id="left-navigation">
- <p>Raspberry PI</p>
- <p>BeagleBone Black</p>
- <p>PI-CAR Recorder</p>
+    <div class="container bottompad">
 
-</div>
+    <h2 class="underline">Support</h2>
+          <h3>Document Guide</h3>
+          <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/pdf-icon.png' class='content-thumbnail'/>
+          <p></p>
+          <strong>RD001-1A User Guide: </strong><a href='#'>Click Me</a><br/>
 
-<div class="content">
-  <h2>Raspberry PI</h2>
-  <p>Release Date: 02 Feb 2013</p>
-  <p><a href="http://www.mantidproject.org/Release_Notes2.4">Release Notes</a></p>
+          <HR color="#00FF00" size="5">
+          <h3>System Image Download</h3>
+          <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/image.png' class='content-thumbnail'/>
+          <p></p>
+          <strong>RD001-1A SD Card Image: </strong><a href='https://dl.dropboxusercontent.com/u/70208644/images/release/20150426_RD001-1A.tar.xz'>Click Me</a><br/>
 
- <table bgcolor="#000000" cellspacing="1"  class="release-table">
-  <tbody>
-  <tr>
-  <td><table bgcolor="#ffffff" border="0" cellspacing="0" width="100%">
+          <HR color="#000000" size="5">
+          <h3>Source code Download</h3>
+          <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/icon-source-code.png' class='content-thumbnail'/>
+          <p></p>
+    </div>
 
-  <tbody>
-  <tr bgcolor="#e0e0e0">
-  <td><strong>Platform</strong></td>
-  <td><strong>Files</strong></td>
-  </tr>
-
-  <tr bgcolor="#f0f0f0">
-  <td>64-bit Windows 7</td>
-  <td><a href="link.download">Mantid-2.4.0-win64.exe</a></td>
-  </tr>
-  <tr bgcolor="#f0f0f0">
-  <td></td>
-  <td><a href="link.download">Paraview-3.1.10-win64.exe</a></td>
-  </tr>
-
-  <tr>
-  <td>32-bit Windows XP</td>
-  <td><a href="link.download">Mantid-2.4.0-win32.exe</a></td>
-  </tr>
-  <tr>
-  <td></td>
-  <td><a href="link.download">ParaView-3.1.10-win32</a></td>
-  </tr>
-
-  <tr bgcolor="#f0f0f0">
-  <td>RedHat 6</td>
-  <td><a href="link.download">mantid-2.4.0-1.el6.x86_64.rpm</a></td>
-  </tr>
-  <tr bgcolor="#f0f0f0">
-  <td></td>
-  <td><a href="link.download">paraview-3.10.1-4.el6.x86_64.rpm</a></td>
-  </tr>
-
-  <tr>
-  <td>Ubuntu 12.04</td>
-  <td><a href="link.download">mantid_2.4.0-1_amd64.deb</a></td>
-  </tr>
-  <tr>
-  <td></td>
-  <td><a href="link.download">ParaView-3.10.1-Linux-x86_64.deb</a></td>
-  </tr>
-
-  <tr bgcolor="#f0f0f0">
-  <td>Mac OS X</td>
-  <td><a href="link.download">mantid-2.4.0-SnowLeopard.dmg</a></td>
-  </tr>
-  <tr bgcolor="#f0f0f0">
-  <td></td>
-  <td><a href="link.download">ParaView-3.10.1-Darwin-x86_64.dmg</a></td>
-  </tr>
-
-  </tbody></table>
-  </tbody></table>
-  
- <h4 id="dev-title">Current Development Build</h4>
-
- <p> Each night the current source is built, packaged & run through a suite of system tests that compare the outputs 
- with a set of reference data. If the tests pass then the package is deployed here. The packages have had minimal human
- testing and it is strongly recommended that they only be used to test new features.
- </p>
-  
- <table bgcolor="#000000" cellspacing="1"  class="release-table">
-  <tbody>
-  <tr>
-  <td><table bgcolor="#ffffff" border="0" cellspacing="0" width="100%">
-
-  <tbody>
-  <tr bgcolor="#e0e0e0">
-  <td><strong>Platform</strong></td>
-  <td><strong>Files</strong></td>
-  <td><strong>Build Date</strong></td>
-  </tr>
-
-  <tr bgcolor="#f0f0f0">
-  <td>64-bit Windows 7</td>
-  <td><a href="link.download">Mantid-2.4.0-win64.exe</a></td>
-  <td>01/04/2013</td>
-  </tr>
-  <tr bgcolor="#f0f0f0">
-  <td></td>
-  <td><a href="link.download">Paraview-3.1.10-win64.exe</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>32-bit Windows XP</td>
-  <td><a href="link.download">Mantid-2.4.0-win32.exe</a></td>
-  <td>01/04/2013</td>
-  </tr>
-  <tr>
-  <td></td>
-  <td><a href="link.download">ParaView-3.1.10-win32</a></td>
-  <td></td>
-  </tr>
-
-  <tr bgcolor="#f0f0f0">
-  <td>RedHat 6</td>
-  <td><a href="link.download">mantid-2.4.0-1.el6.x86_64.rpm</a></td>
-  <td>01/04/2013</td>
-  </tr>
-  <tr bgcolor="#f0f0f0">
-  <td></td>
-  <td><a href="link.download">paraview-3.10.1-4.el6.x86_64.rpm</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>Ubuntu 12.04</td>
-  <td><a href="link.download">mantid_2.4.0-1_amd64.deb</a></td>
-  <td>01/04/2013</td>
-  </tr>
-  <tr>
-  <td></td>
-  <td><a href="link.download">ParaView-3.10.1-Linux-x86_64.deb</a></td>
-  <td></td>
-  </tr>
-
-  <tr bgcolor="#f0f0f0">
-  <td>Mac OS X</td>
-  <td><a href="link.download">mantid-2.4.0-SnowLeopard.dmg</a></td>
-  <td>01/04/2013</td>
-  </tr>
-  <tr bgcolor="#f0f0f0">
-  <td></td>
-  <td><a href="link.download">ParaView-3.10.1-Darwin-x86_64.dmg</a></td>
-  <td></td>
-  </tr>
-
-  </tbody></table>
-  </tbody></table>
- 
-  <h4 id="src-title">Source Code</h4>
-  <p>You can browse the current state of the source code <a href="https://github.com/mantidproject/mantid">here</a>.</p>
-  </div>
-
-
-</body>
+  </body>
 </html>

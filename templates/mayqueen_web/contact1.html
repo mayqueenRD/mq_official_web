@@ -3,14 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>聯絡我們</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <script src="/static/bootstrap/js/jquery.min.js"></script>
     <script src="/static/bootstrap/js/scripts/bootstrap-dropdown.js"></script>
 
@@ -21,51 +16,69 @@
     </script>
 
     <!-- Le styles -->
-    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <STYLE TYPE="text/css">
+        @import url("/static/bootstrap/css/bootstrap.min.css");
+    </STYLE>
+
     <style type="text/css">
       body {
         padding-top: 60px;
       }
     </style>
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-touch-icon-114x114.png">
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
+
   </head>
 
   <body>
+    <!--begin nav-->
 
-    <div class="topbar">
-      <div class="fill">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-          <a class="brand" href=#>聯絡我們</a>
-          <ul class="nav">
-            <li><a href="/">回首頁</a></li>
-          </ul>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#">MAYQUEEN TEK</a>
+            </div>
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">{{home}}</a></li>
+                    <li><a href="/team">{{about_us}}</a></li>
+                    <li><a href="/goods">{{product}}</a></li>
+                    <li><a href="/support">{{support}}</a></li>
+                    <li><a href="/news">{{news}}</a></li>
+                    <li class="active"><a href="/contact">{{contact}}</a></li>
+                </ul>
+
+            </div>
         </div>
-      </div>
     </div>
 
-    <div class="container">
+    <!-- End of navbar-->
+    <br><br><br><br>
 
-      <div class="row">
-        <div class='span8 offset1'>
-          <h1>聯絡我們</h1>
-          <HR color="#000000" size="5">
+    <div class="container bottompad">
+
+    <h2 class="underline">聯絡我們</h2>
           <h3>官方賣場</h3>
-          <img src='/static/images/sample/sold_icon.png' class='content-thumbnail'/>
+          <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/contact/sold_icon.png' class='content-thumbnail'/>
+          <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/contact/ypi.png' class='content-thumbnail'/>
           <p></p>
-          <strong>網址:</strong><a href='http://class.ruten.com.tw/user/index00.php?c=&m=&o=&p=&s=mqshop'> 點選我</a><br/>
-          <strong>Email:</strong> mqservice01@gmail.com <br/>
+          <strong>露天網址:</strong><a href='http://class.ruten.com.tw/user/index00.php?c=&m=&o=&p=&s=mqshop'> 點選我</a><br/>
+          <strong>Y拍網址:</strong><a href='https://tw.bid.yahoo.com/tw/booth/Y6424675296'> 點選我</a><br/>
           <strong>聯絡電話:</strong> 0925-256760 <br/>
-          <strong>聯絡時間:</strong> 週一到週五 AM 10:00 ~ PM 18:00<br/>
+          <strong>聯絡時間:</strong> 週一到週五 PM 8:00 ~ PM 11:00<br/>
 
-          <HR color="#000000" size="5">
+          <HR color="#00FF00" size="5">
           <h3>官方LINE</h3>
-          <img src='/static/images/sample/line_icon.png' class='content-thumbnail'/>
-          <img src='/static/images/sample/qr.jpg' class='content-thumbnail'/>
+          <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/contact/line_icon.png' class='content-thumbnail'/>
+          <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/contact/qr.jpg' class='content-thumbnail'/>
           <p></p>
           <strong>ID:</strong> love_mayqueen<br/>
           <strong>QR Code:</strong> 如上圖右<br/>
@@ -73,25 +86,11 @@
 
           <HR color="#000000" size="5">
           <h3>官方信箱</h3>
-          <img src='/static/images/sample/gmail.jpg' class='content-thumbnail'/>
+          <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/contact/gmail.jpg' class='content-thumbnail'/>
           <p></p>
           <strong>E-Mail:</strong> mqservice01@gmail.com<br/>
           <strong>客服時段:</strong> 隨時都可以寄信詢問.<br/>
-
-          <div class='cleaner_h20'></div>
-        </div>
-
-        <div class='span6'>
-          <h3>合作伙伴</h3>
-          <img src='/static/images/sample/rs-logo_lrg.png' class='content-thumbnail'/>
-          <div class='cleaner_h10'></div>
-
-
-      <footer>
-        <p>&copy; Author 2014 By Wig C.</a></p>
-      </footer>
-
-    </div> <!-- /container -->
+    </div>
 
   </body>
 </html>

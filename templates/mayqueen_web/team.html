@@ -1,19 +1,22 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<title>About Us</title>
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="/static/team/css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="/static/team/css/style.css"> <!-- Gem style -->
-	<script src="/static/team/js/modernizr.js"></script> <!-- Modernizr -->
-
     <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
 
-	<title>About Us</title>
+
+    <STYLE TYPE="text/css">
+      @import url("/static/team/css/reset.css");
+      @import url("/static/team/css/style.css");
+      @import url("http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif");
+    </STYLE>
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="/static/team/js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>
 
@@ -21,22 +24,24 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-            <a class="navbar-brand logo" href="#">MAYQUEEN TEK</a>
+                <a class="navbar-brand logo" href="#">MAYQUEEN TEK</a>
             </div>
             <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">{{home}}</a></li>
-                <li class="active"><a href="/team">{{about_us}}</a></li>
-                <li><a href="/goods">{{product}}</a></li>
-                <li><a href="/support">{{support}}</a></li>
-                <li><a href="#portfolio">{{news}}</a></li>
-                <li><a href="#blog">{{contact}}</a></li>
-            </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">{{home}}</a></li>
+                    <li class="active"><a href="/team">{{about_us}}</a></li>
+                    <li><a href="/goods">{{product}}</a></li>
+                    <li><a href="/support">{{support}}</a></li>
+                    <li><a href="/news">{{news}}</a></li>
+                    <li><a href="/contact">{{contact}}</a></li>
+                </ul>
+
             </div>
         </div>
     </div>
