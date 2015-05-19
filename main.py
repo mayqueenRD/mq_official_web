@@ -3,6 +3,7 @@
 from flask import Flask, render_template, request
 import sqlite3
 import sys
+import subprocess
 
 app = Flask(__name__)
 
@@ -17,6 +18,12 @@ def main():
 
     if request.method == 'POST':
         the_lang=request.form['thelang']
+
+    ip=request.remote_addr
+    proc = subprocess.Popen(["date >> record ", ""], stdout=subprocess.PIPE, shell=True)
+    proc.communicate()
+    proc = subprocess.Popen(["echo '%s' >> record " % ip, ""], stdout=subprocess.PIPE, shell=True)
+    proc.communicate()
 
     if the_lang == '繁體中文':
         lang='t_chinese'
