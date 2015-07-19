@@ -104,6 +104,12 @@ def team():
         'support' : titles[3],
         'news' : titles[4],
         'contact' : titles[5],
+        'core_team' : titles[6],
+        'view_detail' : titles[7],
+        'ceo' : titles[8],
+        'marketing' : titles[9],
+        'product' : titles[10],
+        'development' : titles[11],
     }
     return render_template('mayqueen_web/team.html',**templateData)
 
