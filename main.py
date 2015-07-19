@@ -9,12 +9,13 @@ app = Flask(__name__)
 
 reload(sys)  # Reload does the trick!
 sys.setdefaultencoding('UTF8')
+the_lang='t_chinese'
 
 @app.route("/",methods=['GET' , 'POST'])
 def main():
 
     item=20
-    the_lang='t_chinese'
+    global the_lang
 
     if request.method == 'POST':
         the_lang=request.form['thelang']
@@ -71,8 +72,8 @@ def main():
 @app.route("/team")
 def team():
 
-    item=6
-    the_lang='t_chinese'
+    item=12
+    global the_lang
 
     if request.method == 'POST':
         the_lang=request.form['thelang']
@@ -110,7 +111,7 @@ def team():
 def support():
 
     item=6
-    the_lang='t_chinese'
+    global the_lang
 
     if request.method == 'POST':
         the_lang=request.form['thelang']
@@ -148,7 +149,7 @@ def support():
 def goods():
 
     item=6
-    the_lang='t_chinese'
+    global the_lang
 
     if request.method == 'POST':
         the_lang=request.form['thelang']
@@ -186,7 +187,7 @@ def goods():
 def goods_detail():
 
     item=6
-    the_lang='t_chinese'
+    global the_lang
 
     if request.method == 'POST':
         the_lang=request.form['thelang']
@@ -237,7 +238,7 @@ def goods_detail():
 def contact():
 
     item=6
-    the_lang='t_chinese'
+    global the_lang
 
     if request.method == 'POST':
         the_lang=request.form['thelang']
