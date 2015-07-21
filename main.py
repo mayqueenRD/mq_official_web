@@ -1,24 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 import sqlite3
 import sys
 import subprocess
 
 app = Flask(__name__)
-
+app.config['SECRET_KEY'] = 'F34TF$($e34D';
 reload(sys)  # Reload does the trick!
 sys.setdefaultencoding('UTF8')
-the_lang='t_chinese'
 
 @app.route("/",methods=['GET' , 'POST'])
 def main():
 
     item=20
-    global the_lang
 
+    session['thelang']='English'
     if request.method == 'POST':
-        the_lang=request.form['thelang']
+        session['thelang']=request.form['thelang']
+
 
     ip=request.remote_addr
     proc = subprocess.Popen(["date >> record ", ""], stdout=subprocess.PIPE, shell=True)
@@ -26,11 +26,11 @@ def main():
     proc = subprocess.Popen(["echo '%s' >> record " % ip, ""], stdout=subprocess.PIPE, shell=True)
     proc.communicate()
 
-    if the_lang == '繁體中文':
+    if  session['thelang'] == '繁體中文':
         lang='t_chinese'
-    elif the_lang == 'English':
+    elif session['thelang'] == 'English':
         lang='eng'
-    elif the_lang == '简体中文':
+    elif session['thelang'] == '简体中文':
         lang='s_chinese'
     else:
         lang='t_chinese'
@@ -73,16 +73,12 @@ def main():
 def team():
 
     item=12
-    global the_lang
 
-    if request.method == 'POST':
-        the_lang=request.form['thelang']
-
-    if the_lang == '繁體中文':
+    if session['thelang'] == '繁體中文':
         lang='t_chinese'
-    elif the_lang == 'English':
+    elif session['thelang'] == 'English':
         lang='eng'
-    elif the_lang == '简体中文':
+    elif session['thelang'] == '简体中文':
         lang='s_chinese'
     else:
         lang='t_chinese'
@@ -108,7 +104,7 @@ def team():
         'view_detail' : titles[7],
         'ceo' : titles[8],
         'marketing' : titles[9],
-        'product' : titles[10],
+        'product_ment' : titles[10],
         'development' : titles[11],
     }
     return render_template('mayqueen_web/team.html',**templateData)
@@ -117,16 +113,12 @@ def team():
 def support():
 
     item=6
-    global the_lang
 
-    if request.method == 'POST':
-        the_lang=request.form['thelang']
-
-    if the_lang == '繁體中文':
+    if  session['thelang']== '繁體中文':
         lang='t_chinese'
-    elif the_lang == 'English':
+    elif session['thelang'] == 'English':
         lang='eng'
-    elif the_lang == '简体中文':
+    elif session['thelang'] == '简体中文':
         lang='s_chinese'
     else:
         lang='t_chinese'
@@ -160,11 +152,11 @@ def goods():
     if request.method == 'POST':
         the_lang=request.form['thelang']
 
-    if the_lang == '繁體中文':
+    if session['thelang'] == '繁體中文':
         lang='t_chinese'
-    elif the_lang == 'English':
+    elif session['thelang'] == 'English':
         lang='eng'
-    elif the_lang == '简体中文':
+    elif session['thelang'] == '简体中文':
         lang='s_chinese'
     else:
         lang='t_chinese'
@@ -193,16 +185,12 @@ def goods():
 def goods_detail():
 
     item=6
-    global the_lang
 
-    if request.method == 'POST':
-        the_lang=request.form['thelang']
-
-    if the_lang == '繁體中文':
+    if session['thelang'] == '繁體中文':
         lang='t_chinese'
-    elif the_lang == 'English':
+    elif session['thelang'] == 'English':
         lang='eng'
-    elif the_lang == '简体中文':
+    elif session['thelang'] == '简体中文':
         lang='s_chinese'
     else:
         lang='t_chinese'
@@ -244,16 +232,12 @@ def goods_detail():
 def contact():
 
     item=6
-    global the_lang
 
-    if request.method == 'POST':
-        the_lang=request.form['thelang']
-
-    if the_lang == '繁體中文':
+    if session['thelang'] == '繁體中文':
         lang='t_chinese'
-    elif the_lang == 'English':
+    elif session['thelang'] == 'English':
         lang='eng'
-    elif the_lang == '简体中文':
+    elif session['thelang'] == '简体中文':
         lang='s_chinese'
     else:
         lang='t_chinese'
