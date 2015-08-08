@@ -263,5 +263,14 @@ def contact():
     return render_template('mayqueen_web/contact1.html',**templateData)
 
 
+@app.route("/minipc")
+def minipc():
+    return render_template('mayqueen_web/minipc.html')
+
+@app.route("/dashcam")
+def dashcam():
+    return render_template('mayqueen_web/dashcam.html')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)

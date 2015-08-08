@@ -1,163 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-	<title>MayQueen Technology</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="/static/bootstrap/css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-
-	<!--begin nav-->
-
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MayQueen Technology</title>
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" type="text/css" href="/static/index/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="/static/index/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="/static/time/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="/static/time/css/component.css" />
+		<script src="/static/index/js/modernizr.custom.js"></script>
+	</head>
+	<body>
 		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-          		</button>
-          		<a class="navbar-brand logo" href="#">MAYQUEEN TEK</a>
-			</div>
-			<div class="collapse navbar-collapse">
+			<header class="clearfix">
+                <img src="/static/index/image/main.jpg"><br>
+				<h1>Official Website</h1>
+			</header>	
+            <div>
+                <center><img src="https://dl.dropboxusercontent.com/u/70208644/images/official/home/bg.jpg" class="topimg"></center>
+            </div>
+			<ul id="cbp-tm-menu" class="cbp-tm-menu">
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="#">Products</a>
+					<ul class="cbp-tm-submenu">
+						<li><a href="/minipc" class="cbp-tm-icon-cog">Mini PC Solution</a></li>
+						<li><a href="/dashcam" class="cbp-tm-icon-location">DashCam Solution</a></li>
+						<li><a href="" class="cbp-tm-icon-users">Media Solution</a></li>
+						<li><a href="#" class="cbp-tm-icon-users">Projects</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">News</a>
+					<ul class="cbp-tm-submenu">
+						<li><a href="http://mayqueentek.blogspot.tw/" class="cbp-tm-icon-archive">MayQueen News</a></li>
+						<li><a href="#" class="cbp-tm-icon-cog">Download Center</a></li>
+						<li><a href="#" class="cbp-tm-icon-cog">Forum</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">About Us</a>
+					<ul class="cbp-tm-submenu">
+						<li><a href="/team" class="cbp-tm-icon-users">Core Team</a></li>
+						<li><a href="/contact" class="cbp-tm-icon-users">Contact Us</a></li>
+					</ul>
+				</li>
 
-				<ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="/">{{home}}</a></li>
-                    <li><a href="/team">{{about_us}}</a></li>
-                    <li><a href="/goods">{{product}}</a></li>
-                    <li><a href="/support">{{support}}</a></li>
-                    <li><a href="http://mayqueentek.blogspot.tw/">{{news}}</a></li>
-                    <li><a href="/contact">{{contact}}</a></li>
-          		</ul>
+				<li>
+					<a href="#">Language</a>
+					<ul class="cbp-tm-submenu">
+						<li><a href="#" class="cbp-tm-icon-users">English</a></li>
+						<li><a href="#" class="cbp-tm-icon-users">繁體中文</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="filler-below">
 
-			</div>
-		</div>
-	</div>
-
-	<!-- End of navbar-->
-<div class="topmargin">
-	<img src="https://dl.dropboxusercontent.com/u/70208644/images/official/home/company.jpg" class="topimg">
-</div>
-	
-<div class="container bottompad toppad">
-	<div class="col-md-4">
-		<div class="col-xs-2">
-			<h1><span class="glyphicon glyphicon-briefcase"></h1>
-		</div>
-		<div class="col-xs-10">
-            <h2></span>{{creative_product}}</h2>
-		</div>
-		<div class="col-md-12">
-            <p>{{cp_description}}</p>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="col-xs-2">
-			<h1><span class="glyphicon glyphicon-floppy-disk"></h1>
-		</div>
-		<div class="col-xs-10">
-            <h2></span>{{perfect_service}}</h2>
-		</div>
-		<div class="col-md-12">
-            {{ps_description}}
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="col-xs-2">
-			<h1><span class="glyphicon glyphicon-map-marker"></h1>
-		</div>
-		<div class="col-xs-10">
-            <h2></span>{{individual_platform}}</h2>
-		</div>
-		<div class="col-md-12">
-            <p>{{ip_description}}</p>
-		</div>
-	</div>
-</div>
-
-
-<div class="container bottompad">
-    <h2 class="underline">{{hot_product}}</h2>
-	<div class="col-xs-2">
-		<img src="https://dl.dropboxusercontent.com/u/70208644/images/official/home/chicago2.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Raspberry PI Camera">
-	</div>
-	<div class="col-xs-2">
-		<img src="https://dl.dropboxusercontent.com/u/70208644/images/official/home/chicago1.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Raspberry PI Boards">
-	</div>
-	<div class="col-xs-2">
-		<img src="https://dl.dropboxusercontent.com/u/70208644/images/official/home/onion.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="BeagleBone Black Wifi AP">
-	</div>
-	<div class="col-xs-2">
-		<img src="https://dl.dropboxusercontent.com/u/70208644/images/official/home/cookie.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="IMX6 Tablet">
-	</div>
-	<div class="col-xs-2">
-		<img src="https://dl.dropboxusercontent.com/u/70208644/images/official/home/wings.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Raspberry PI MediaBox">
-	</div>
-	<div class="col-xs-2">
-		<img src="https://dl.dropboxusercontent.com/u/70208644/images/official/home/infinity.jpg" class="img-thumbnail zoom project" data-toggle="tooltip" title="Raspberry PI Car Record">
-	</div>
-</div>
-
-<div class="container bottompad">
-    <h2 class="underline">{{last_news}}</h2>
-    <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/vendor/rs.jpg' class='content-thumbnail'/>
-    <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/vendor/newsmy.jpg' class='content-thumbnail'/>
-</div>
-
-
-<div class="bottom">
-<div class="container">
-	<div class="col-md-4">
-        <h2 class="underline">{{member_zone}}</h2>
-		<p>{{login_msg}}</p>
-		<div class="input-group">
-            <p><input type="text" class="form-control" placeholder="Email"></p>
-            <p><input type="text" class="form-control" placeholder="Password"></p>
-            <button class="btn btn-default" type="button">{{login}}</button>
-            <button class="btn btn-default" type="button">{{register_acc}}</button>
-    	</div>
-	</div>
-	<div class="col-md-4">
-        <h2 class="underline">{{community}}</h2>
-		<img src="/static/images/sample/facebook.svg" class="icos">
-		<img src="/static/images/sample/twitter.svg" class="icos">
-		<img src="/static/images/sample/rss.svg" class="icos">
-		<img src="/static/images/sample/google.svg" class="icos">
-		<img src="/static/images/sample/pinterest.svg" class="icos">
-		<img src="/static/images/sample/vimeo.svg" class="icos">
-		<img src="/static/images/sample/linkedin.svg" class="icos">
-	</div>
-	<div class="col-md-4">
-        <h2 class="underline">{{change_lang}}</h2>
-        <form action="/" method="POST">
-        <select id="thelang" name="thelang" >
-        <option>繁體中文</option>
-        <option>English</option>
-        <option>简体中文</option>
-        <input type="submit" name="btn_lang" class ="btn-primary" value="確認">
-        </select>
-        </form>
-	</div>
-</div>
-</div>
-
-<div class="waybottom">
-	<div class="container">
-		<p>Copyright ©2015 MayQueen Technology Co., Ltd.</p>
-	</div>
-</div>
-
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="/static/bootstrap/js/bootstrap.js"></script>
-<script>
-	$(document).ready(function() {
-		$('.project').tooltip()
-	});
-</script>
-
-</body>
-
+        <div class="main">
+                <ul class="cbp_tmtimeline">
+                    <li>
+                        <time class="cbp_tmtime" datetime="2013-05-10"><span></span> <span>2014/5</span></time>
+                        <div class="cbp_tmicon cbp_tmicon-screen"></div>
+                        <div class="cbp_tmlabel">
+                            <h2>MayQueen's headquarter is located in TW officially</h2>
+                            <p>MayQueen is ambitious of being the best design and develope technology goods platform in the world, we not only have many the top of RD but also expert management employees. We insist to sell high quality and invent indivisual goods only. We'll reach the world's business-opportunity in the future even though we're located in TW in 2015 so far. Everyone would be attracted by us in the world soon!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <time class="cbp_tmtime" datetime="2014-10-11"><span></span> <span>2014/10</span></time>
+                        <div class="cbp_tmicon cbp_tmicon-screen"></div>
+                        <div class="cbp_tmlabel">
+                            <h2>First Milestone</h2>
+                            <p>At the beginning, We're being a vendor to sell kid's tablet and get good scores. Nevertheless, we've determined to become a head company of embedded application per our latest discussion and also allied with RS componet. All we can do is to provide the best service and price to our customers.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <time class="cbp_tmtime" datetime="2015-01-11"><span></span> <span>2015/1</span></time>
+                        <div class="cbp_tmicon cbp_tmicon-mail"></div>
+                        <div class="cbp_tmlabel">
+                            <h2>Transformation</h2>
+                            <p>We keep offering mini-pc and dashcam solution this kind of new embedded products, it declares that our change is totally succeed!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <time class="cbp_tmtime" datetime="2013-09-09"><span></span> <span>2015/9</span></time>
+                        <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                        <div class="cbp_tmlabel">
+                            <h2>In the Future</h2>
+                            <p>We're going to invest highly efficient ARM platform and look for more talented person. We pursue to being the head of the embedded industry by the international team-work with new partner-Freescale and Linaro.</p>
+                        </div>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+		<script src="/static/index/js/cbpTooltipMenu.min.js"></script>
+		<script>
+			var menu = new cbpTooltipMenu( document.getElementById( 'cbp-tm-menu' ) );
+		</script>
+	</body>
 </html>
