@@ -12,6 +12,13 @@ sys.setdefaultencoding('UTF8')
 
 @app.route("/",methods=['GET' , 'POST'])
 def main():
+
+    ip=request.remote_addr
+    proc = subprocess.Popen(["date >> record ", ""], stdout=subprocess.PIPE, shell=True)
+    proc.communicate()
+    proc = subprocess.Popen(["echo '%s' >> record " % ip, ""], stdout=subprocess.PIPE, shell=True)
+    proc.communicate()
+
     return render_template('mayqueen_web/index.html')
 
 @app.route("/team")
