@@ -69,6 +69,10 @@ def contact():
 def minipc():
     return render_template('mayqueen_web/minipc.html')
 
+@app.route("/miniserver")
+def miniserver():
+    return render_template('mayqueen_web/miniserver.html')
+
 @app.route("/dashcam")
 def dashcam():
     return render_template('mayqueen_web/dashcam.html')
