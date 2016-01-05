@@ -73,6 +73,10 @@ def minipc():
 def miniserver():
     return render_template('mayqueen_web/miniserver.html')
 
+@app.route("/miniiot")
+def miniiot():
+    return render_template('mayqueen_web/miniiot.html')
+
 @app.route("/dashcam")
 def dashcam():
     return render_template('mayqueen_web/dashcam.html')
