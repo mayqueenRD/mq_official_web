@@ -4,7 +4,7 @@
 
 /* Simple fluid media
    Note: Fluid media requires that you remove the media's height and width attributes from the HTML
-   http://www.alistapart.com/articles/fluid-images/ 
+   http://www.alistapart.com/articles/fluid-images/
 */
 img, object, embed, video {
 	max-width: 100%;
@@ -22,10 +22,10 @@ img, object, embed, video {
 	dw-num-cols-tablet:		8;
 	dw-num-cols-desktop:	12;
 	dw-gutter-percentage:	25;
-	
-	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+
+	Inspiration from "Responsive Web Design" by Ethan Marcotte
 	http://www.alistapart.com/articles/responsive-web-design
-	
+
 	and Golden Grid System by Joni Korpi
 	http://goldengridsystem.com/
 */
@@ -42,12 +42,12 @@ img, object, embed, video {
     list-style:none;
     list-style-image:none;
     margin:0;
-    padding:0;        
+    padding:0;
 }
 
 /* Mobile Layout: 300px and below. */
 
-  
+
 .gridContainer {
 	min-width: 300px;
 	max-width: 600px;
@@ -56,8 +56,6 @@ img, object, embed, video {
 	width: 100%;
 	clear: none;
 	float: none;
-}
-#div1 {
 }
 
 
@@ -76,7 +74,7 @@ h1 {
 	color: white;
 	letter-spacing: 3px;
 	line-height: 100%;
-	
+
 }
 
 #logo{
@@ -105,6 +103,7 @@ h1 {
 	letter-spacing: 3px;
 	text-align:center;
 }
+
 #contact h2{
 	display:inline;
 	padding-left: 20px;
@@ -129,7 +128,7 @@ h1 {
 #cssmenu:before {
   content: '';
   display: block;
-  
+
 }
 #cssmenu:after {
   content: '';
@@ -185,7 +184,7 @@ h1 {
 
 /*----------------------------------------------------------------HOME PAGE------------------------------------------------------------------- */
 
-#mainimg{ 
+#mainimg{
 position: relative;
 width:100%;
 height:100%;
@@ -204,16 +203,16 @@ visibility: hidden;
 }
 
 /* the images are positioned absolutely to stack. opacity transitions are animated. */
-.slides img { 
+.slides img {
   display: block;
-  position: absolute; 
+  position: absolute;
   transition: opacity 1s;
   opacity: 0;
   width: 100%;
 }
 
 /* the first image is the current slide. it's faded in. */
-.slides img:first-child { 
+.slides img:first-child {
   z-index: 2; /* frontmost */
   opacity: 1;
 }
@@ -228,10 +227,10 @@ visibility: hidden;
 
 #servicecontainer{
 	margin-top: 77px;
-	height: 2500px;
+	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-		
+
 }
 
 h3{
@@ -270,6 +269,10 @@ h3{
 	color: #FFFFFF;
 }
 
+#nonedisplay{
+	orphans: 0;
+}
+
 /*----------------------------------------------------------------GALLERY PAGE------------------------------------------------------------------- */
 
 #gallerycontainer{
@@ -277,7 +280,7 @@ h3{
 	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-		
+
 }
 .fancybox-thumbs {
 	width: 45%;
@@ -301,7 +304,7 @@ h3{
 	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-		
+
 }
 
 h4{
@@ -313,7 +316,7 @@ h4{
 	font-size: 50px;
 	font-weight: lighter;
 	letter-spacing: 3px;
-		
+
 }
 
 #aboutp{
@@ -326,7 +329,7 @@ h4{
 	letter-spacing: 1px;
 	font-weight: lighter;
 }
-b{	
+b{
 	display: inline;
 	font-family: 'Lobster', cursive;
 	color:#574C3F;
@@ -379,7 +382,7 @@ p{
 	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-	
+
 }
 form{
 	padding-top: 30px;
@@ -390,8 +393,8 @@ form{
 	font-size: 16px;
 	font-weight: lighter;
 	color: black;
-	letter-spacing: 3px;	
-	
+	letter-spacing: 3px;
+
 }
 form table{
 	width:310px;
@@ -441,7 +444,7 @@ textarea{
 }
 select{
 	font-family: 'Lobster', cursive;
-	
+
 }
 
 /*----------------------------------------------------------------FOOTER------------------------------------------------------------------- */
@@ -452,7 +455,7 @@ select{
 	height: 10px;
 	width: 100%;
 	z-index:3;
-	
+
 }
 
 footer {
@@ -513,10 +516,7 @@ footer p {
 	width: 100%;
 	clear: none;
 	float: none;
-	
-}
 
-#div1{
 }
 
 /*----------------------------------------------------------------HEADER------------------------------------------------------------------- */
@@ -587,7 +587,7 @@ h1 {
 #cssmenu:before {
   content: '';
   display: block;
-  
+
 }
 #cssmenu:after {
   content: '';
@@ -642,7 +642,7 @@ h1 {
 
 /*----------------------------------------------------------------HOME PAGE------------------------------------------------------------------- */
 
-#mainimg{ 
+#mainimg{
 	position: relative;
 	width:100%;
 	height:100%;
@@ -650,7 +650,7 @@ h1 {
 #hidden{
 	position:static;
 	visibility: hidden;
-	
+
 }
 /* the slide container with a fixed size */
 .slides {
@@ -661,16 +661,16 @@ h1 {
 }
 
 /* the images are positioned absolutely to stack. opacity transitions are animated. */
-.slides img { 
+.slides img {
   display: block;
-  position: absolute; 
+  position: absolute;
   transition: opacity 1s;
   opacity: 0;
   width: 100%;
 }
 
 /* the first image is the current slide. it's faded in. */
-.slides img:first-child { 
+.slides img:first-child {
   z-index: 2; /* frontmost */
   opacity: 1;
 }
@@ -687,13 +687,12 @@ h1 {
 
 #servicecontainer{
 	margin-top: 43px;
-	height: 1300px;
+	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-	
+
 }
 h3{
-
 	width: 40%;
 	height: 45px;
 	background-color: #D9D9D9;
@@ -736,7 +735,7 @@ h3{
 	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-	
+
 }
 
 .fancybox-thumbs {
@@ -761,7 +760,7 @@ h3{
 	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-	
+
 }
 
 h4{
@@ -773,7 +772,7 @@ h4{
 	font-size: 60px;
 	font-weight: lighter;
 	letter-spacing: 3px;
-		
+
 }
 
 #aboutp{
@@ -786,7 +785,7 @@ h4{
 	letter-spacing: 1px;
 	font-weight: lighter;
 }
-b{	
+b{
 	display: inline;
 	font-family: 'Lobster', cursive;
 	color:#574C3F;
@@ -838,7 +837,7 @@ p{
 	height: 840px;
 	width: 100%;
 	background-color:#D9D9D9;
-	
+
 }
 form{
 	padding-top: 50px;
@@ -849,8 +848,8 @@ form{
 	font-size: 16px;
 	font-weight: lighter;
 	color: black;
-	letter-spacing: 3px;	
-	
+	letter-spacing: 3px;
+
 }
 form table{
 	width:600px;
@@ -912,7 +911,7 @@ select{
 	height: 10px;
 	width: 100%;
 	z-index:3;
-	
+
 }
 
 footer {
@@ -991,7 +990,7 @@ h1 {
 	letter-spacing: 3px;
 	padding-top: 20px;
 	line-height: 100%;
-	
+
 }
 
 #logo{
@@ -1049,12 +1048,12 @@ h1 {
   height: 25px;
   padding: 11px 0;
   margin-top: 0px;
-  
+
 }
 #cssmenu:before {
   content: '';
   display: block;
-  
+
 }
 #cssmenu:after {
   content: '';
@@ -1099,7 +1098,7 @@ h1 {
 #cssmenu .active {
   text-decoration: none;
   border-bottom: 5px solid #7ab900;
-  
+
 }
 #cssmenu li:hover a {
   color: #fff;
@@ -1114,7 +1113,7 @@ h1 {
 
 /*----------------------------------------------------------------HOME PAGE------------------------------------------------------------------- */
 
-#mainimg{ 
+#mainimg{
 	position: relative;
 	width:100%;
 	height:100%;
@@ -1122,7 +1121,7 @@ h1 {
 #hidden{
 	position:static;
 	visibility: hidden;
-	
+
 }
 /* the slide container with a fixed size */
 .slides {
@@ -1133,16 +1132,16 @@ h1 {
 }
 
 /* the images are positioned absolutely to stack. opacity transitions are animated. */
-.slides img { 
+.slides img {
   display: block;
-  position: absolute; 
+  position: absolute;
   transition: opacity 1s;
   opacity: 0;
   width: 100%;
 }
 
 /* the first image is the current slide. it's faded in. */
-.slides img:first-child { 
+.slides img:first-child {
   z-index: 2; /* frontmost */
   opacity: 1;
 }
@@ -1162,7 +1161,7 @@ h1 {
 	height: 840px;
 	width: 100%;
 	background-color:#D9D9D9;
-	
+
 }
 
 
@@ -1173,8 +1172,8 @@ form{
 	font-size: 16px;
 	font-weight: lighter;
 	color: black;
-	letter-spacing: 3px;	
-	
+	letter-spacing: 3px;
+
 }
 form table{
 	width:600px;
@@ -1190,12 +1189,12 @@ form table{
 	box-shadow: 0px 0px 10% 10% #F5F5F5;
 }
 
-td{ 
+td{
 	padding: 3px 20px 3px 20px;
 	-webkit-box-shadow: 0px 0px;
 	box-shadow: 0px 0px;
 }
-	
+
 option{
 	font-family: 'Lobster', cursive;
 }
@@ -1228,17 +1227,17 @@ textarea{
 }
 select{
 	font-family: 'Lobster', cursive;
-	
+
 }
 
 /*----------------------------------------------------------------SERVICES PAGE------------------------------------------------------------------- */
 
 #servicecontainer{
 	margin-top:37px;
-	height: 1600px;
+	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-	
+
 }
 h3{
 
@@ -1286,7 +1285,7 @@ h3{
 	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-	
+
 }
 
 .fancybox-thumbs {
@@ -1314,7 +1313,7 @@ h3{
 	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-	
+
 }
 
 h4{
@@ -1322,12 +1321,12 @@ h4{
 	margin-top: 20px;
 	margin-bottom: 10px;
 	font-family: 'Six Caps', sans-serif;
-	
+
 	color: white;
 	font-size: 60px;
 	font-weight: lighter;
 	letter-spacing: 3px;
-		
+
 }
 
 #aboutp{
@@ -1340,7 +1339,7 @@ h4{
 	letter-spacing: 1px;
 	font-weight: lighter;
 }
-b{	
+b{
 	display: inline;
 	font-family: 'Lobster', cursive;
 	color:#574C3F;
@@ -1393,7 +1392,7 @@ p{
 	height: 10px;
 	width: 100%;
 	z-index:3;
-	
+
 }
 
 footer {
