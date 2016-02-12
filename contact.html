@@ -1,16 +1,17 @@
 <!doctype html>
+<html>
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>puget fence</title>
-  <link href="boilerplate.css" rel="stylesheet" type="text/css">
-  <link href="index.css" rel="stylesheet" type="text/css">
-  <!-- favicon fonts -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Six+Caps" rel="stylesheet" type="text/css">
-  <script src="respond.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>puget fence</title>
+    <link href="boilerplate.css" rel="stylesheet" type="text/css">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <!-- favicon fonts -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Six+Caps" rel="stylesheet" type="text/css">
+    <script src="respond.min.js"></script>
   </head>
   <body>
     <div class="gridContainer clearfix">
@@ -39,107 +40,120 @@
       <div id="formcontainer">
         <form name="contactform" method="post" action="send_form_email.php">
 					<table>
-                    	<tr>
-                        	<td><br></td><td><br></td>
-
-                        </tr>
+            <tr>
+              <td><br></td>
+              <td><br></td>
+            </tr>
 						<tr>
 							<td valign="top"><label for="first_name">First Name *</label></td>
  							<td valign="top"><input  type="text" name="first_name"></td>
-                        </tr>
+            </tr>
  						<tr>
-                        	<td valign="top"><label for="last_name">Last Name *</label></td>
+              <td valign="top"><label for="last_name">Last Name *</label></td>
 							<td valign="top"><input  type="text" name="last_name"></td>
-                        </tr>
-                        <tr>
-                        	<td valign="top"><label for="email">Email Address *</label></td>
+            </tr>
+            <tr>
+              <td valign="top"><label for="email">Email Address *</label></td>
 							<td valign="top"><input  type="text" name="email"></td>
  						</tr>
  						<tr>
-                        	<td valign="top"><label for="telephone">Telephone Number *</label></td>
-                            <td valign="top"><input  type="text" name="telephone"></td>
+              <td valign="top"><label for="telephone">Telephone Number *</label></td>
+              <td valign="top"><input  type="text" name="telephone"></td>
  						</tr>
-  						<tr>
-                        	<td valign="top"><label for="address">Street Address</label></td>
-                            <td valign="top"><input  type="text" name="address"></td>
- 						</tr>
- 						<tr>
-                        	<td valign="top"><label for="city">City</label></td>
-                            <td valign="top"><input  type="text" name="city"></td>
+  					<tr>
+              <td valign="top"><label for="address">Street Address</label></td>
+              <td valign="top"><input  type="text" name="address"></td>
  						</tr>
  						<tr>
-                        	<td valign="top"><label for="zipcode">Zipcode</label></td>
-                            <td valign="top"><input  type="text" name="zipcode"></td>
+              <td valign="top"><label for="city">City</label></td>
+              <td valign="top"><input  type="text" name="city"></td>
  						</tr>
  						<tr>
-                        	<td valign="top"><label for="project">Project Type</label></td>
-                            <td valign="top"><select name="project">
-  													<option value="fence">Fence</option>
-  													<option value="deck">Deck</option>
-                                                    <option value="roofing">Roofing</option>
-                                                    <option value="repair">Home Repairs</option>
-                                                    <option value="concrete">Concrete Flat Work</option>
-  													<option value="other">Other</option>
-											</select></td>
+              <td valign="top"><label for="zipcode">Zipcode</label></td>
+              <td valign="top"><input  type="text" name="zipcode"></td>
  						</tr>
  						<tr>
-                        	<td valign="top"><label for="material">Fencing Material</label></td>
-                            <td valign="top"><select name="material">
-  													<option value="chain">Chain Link</option>
-  													<option value="cedar">Cedar</option>
-  													<option value="vinyl">Vinyl</option>
-  													<option value="metal">Metal</option>
-                                                    <option value="other">Other</option>
-											</select></td>
- 						</tr>
-                         						<tr>
-                        	<td valign="top"><label for="terrain">Terrain Description</label></td>
-                            <td valign="top"><select name="terrain">
-  													<option value="flat">Flat</option>
-  													<option value="slope">Slope</option>
-  													<option value="rockwalls">Rockwalls</option>
-                                                    <option value="other">Other</option>
-											</select></td>
+              <td valign="top"><label for="project">Project Type</label></td>
+              <td valign="top">
+                <select name="project">
+  								<option value="fence">Fence</option>
+  								<option value="deck">Deck</option>
+                  <option value="roofing">Roofing</option>
+                  <option value="repair">Home Repairs</option>
+                  <option value="concrete">Concrete Flat Work</option>
+  								<option value="other">Other</option>
+								</select>
+              </td>
  						</tr>
  						<tr>
-                        	<td valign="top"><label for="size">Project Size</label></td>
-                            <td valign="top"><select name="size">
-  													<option value="small">Small less than 30LF</option>
-  													<option value="medium">Medium 30LF to 100LF</option>
-  													<option value="large">Large more than 100LF</option>
-											</select></td>
+              <td valign="top"><label for="material">Fencing Material</label></td>
+              <td valign="top">
+                <select name="material">
+									<option value="chain">Chain Link</option>
+									<option value="cedar">Cedar</option>
+									<option value="vinyl">Vinyl</option>
+									<option value="metal">Metal</option>
+                  <option value="other">Other</option>
+								</select>
+              </td>
+ 						</tr>
+            <tr>
+              <td valign="top"><label for="terrain">Terrain Description</label></td>
+              <td valign="top">
+                <select name="terrain">
+									<option value="flat">Flat</option>
+									<option value="slope">Slope</option>
+									<option value="rockwalls">Rockwalls</option>
+                  <option value="other">Other</option>
+								</select>
+              </td>
  						</tr>
  						<tr>
-                        	<td valign="top"><label for="tree">Existing Tree Removal</label></td>
-                            <td valign="top"><input type="radio" name="tree" value="yes">Yes
-											 <input type="radio" name="tree" value="no">No</td>
+              <td valign="top"><label for="size">Project Size</label></td>
+              <td valign="top">
+                <select name="size">
+									<option value="small">Small less than 30LF</option>
+									<option value="medium">Medium 30LF to 100LF</option>
+									<option value="large">Large more than 100LF</option>
+								</select>
+              </td>
  						</tr>
  						<tr>
-                        	<td valign="top"><label for="fence">Existing Fence Removal</label></td>
-                            <td valign="top"><input type="radio" name="fence" value="yes">Yes
-											 <input type="radio" name="fence" value="no">No</td>
+              <td valign="top"><label for="tree">Existing Tree Removal</label></td>
+              <td valign="top">
+                <input type="radio" name="tree" value="yes">Yes
+								<input type="radio" name="tree" value="no">No
+              </td>
+ 						</tr>
+ 						<tr>
+            	<td valign="top"><label for="fence">Existing Fence Removal</label></td>
+              <td valign="top">
+                <input type="radio" name="fence" value="yes">Yes
+							  <input type="radio" name="fence" value="no">No
+              </td>
  						</tr>
 						<tr>
-                        	<td valign="top"><label for="contact">Best Time to Call</label></td>
+              <td valign="top"><label for="contact">Best Time to Call</label></td>
 							<td valign="top"><input  type="text" name="contact"></td>
  						</tr>
 						<tr>
-                        	<td valign="top"><label for="comments">Other Comments</label></td>
-							<td valign="top"><textarea  name="comments" maxlength="1000" cols="28" rows="4"></textarea></td>
+              <td valign="top"><label for="comments">Other Comments</label></td>
+							<td valign="top">
+                <textarea  name="comments" maxlength="1000" cols="28" rows="4">
+                </textarea>
+              </td>
  						</tr>
 						<tr>
-                        	<td colspan="2" style="text-align:center">
-                            <span class="maintext style4">Enter Code</span>
-                            <img src="captcha.php" alt="Captcha Image Verification" align="absmiddle" /><br /> <br>
-							<input type="text" name="vercode" maxlength="10" size="10"/>
-							<span class="maintext">(Case Sensitive) </span><br><br>
-                            <input type="submit" value="Schedule a Free Estimate"></td>
+              <td colspan="2" style="text-align:center">
+                <input type="submit" value="Schedule a Free Estimate">
+              </td>
 						</tr>
-                        	<td><br></td><td><br></td>
-
+              <td><br></td>
+              <td><br></td>
  					</table>
  				</form>
         </div>
+        
   			<div id="lowerline">
         </div>
 
