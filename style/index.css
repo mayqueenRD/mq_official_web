@@ -304,8 +304,9 @@ h3{
 	height: 100%;
 	width: 100%;
 	background-color:#D9D9D9;
-
 }
+
+
 
 h4{
 	text-align: center;
@@ -386,7 +387,7 @@ p{
 }
 form{
 	padding-top: 30px;
-    margin-left: auto;
+  margin-left: auto;
 	margin-top: 20%;
 	margin-bottom: 10%;
 	font-family: 'Lobster', cursive;
@@ -409,6 +410,8 @@ form table{
 	-webkit-box-shadow: 0px 0px 10% 10% #F5F5F5;
 	box-shadow: 0px 0px 10% 10% #F5F5F5;
 }
+
+
 td{
 	padding: 1px 1px 4px 10px;
 }
@@ -436,6 +439,10 @@ input[type=submit] {
 input[type=submit]:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );
 	background-color:#8cb82b;
+}
+
+input:required {
+	background-color: #e5e5e5;
 }
 
 textarea{
