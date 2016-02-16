@@ -1,0 +1,25 @@
+{
+  "name": "puget-fence-llc",
+  "version": "1.0.0",
+  "description": "puget fence company website",
+  "main": "server.js",
+  "dependencies": {
+    "nodemailer": "^2.1.0",
+    "xoauth2": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honghaobi/puget-fence-llc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/honghaobi/puget-fence-llc/issues"
+  },
+  "homepage": "https://github.com/honghaobi/puget-fence-llc#readme"
+}
