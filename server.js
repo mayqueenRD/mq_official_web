@@ -5,8 +5,6 @@ var app = express();
 
 var smtpTransport = nodemailer.createTransport(smtpTransport({
     host : "smtp.gmail.com",
-    secureConnection : false,
-    port: 587,
     auth : {
         user : "henrybidesign@gmail.com",
         pass : "Orange999999999"
@@ -38,6 +36,7 @@ app.get('/send',function(req,res){
         }
     });
 });
+
 
 app.listen(3000,function(){
     console.log("Express Started on Port 3000");
