@@ -13,6 +13,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster|Six+Caps" rel="stylesheet" type="text/css">
     <script src="js/respond.min.js"></script>
     <script src="server.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $.get("http://localhost:3000/send",{},function(data){
+      });
+    });
+    </script>
   </head>
   <body>
     <div class="gridContainer clearfix">
