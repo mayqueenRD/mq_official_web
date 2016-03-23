@@ -1,34 +1,35 @@
 var express = require('express');
 var nodemailer = require("nodemailer");
-var app = express();
 
-var smtpTransport = nodemailer.createTransport("SMTP",{
-    service: "Gmail",
+var smtpConfig = {
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true, // use SSL
     auth: {
-        user: "henrybidesign@gmail.com",
-        pass: "Orange999999999"
+        user: "honghaobitest@gmail.com",
+        pass: "test1234567890"
     }
-});
+};
 
-app.get('/send',function(req,res){
-  var mailOptions = {
-    to : "henrybi@uw.edu",
-    subject : "test",
-    text : "test"
-  };
-  console.log(mailOptions);
+var transporter = nodemailer.createTransport(smtpConfig);
 
-  smtpTransport.sendMail(mailOptions, function(error, response){
+
+
+var mailOptions = {
+  from: '"Henry Bi 👥" <henrybidesign@gmail.com>',
+  to : "henrybi@uw.edu",
+  subject : "test",
+  text : "test",
+  html: '<b>Hello world 🐴</b>'
+};
+
+transporter.sendMail(mailOptions, function(error, info){
     if(error){
-    console.log(error);
-    res.end("error");
-    }else{
-    console.log("Message sent: " + response.message);
-    res.end("sent");
+        return console.log(error);
     }
-  });
+    console.log('Message sent: ' + info.response);
 });
 
-app.listen(3000, function(){
-console.log("Express Started on Port 3000");
-});
+// app.listen(3000, function(){
+// console.log("Express Started on Port 3000");
+// });
