@@ -13,8 +13,6 @@ var smtpConfig = {
 
 var transporter = nodemailer.createTransport(smtpConfig);
 
-
-
 var mailOptions = {
   from: '"Henry Bi 👥" <henrybidesign@gmail.com>',
   to : "henrybi@uw.edu",
@@ -30,6 +28,10 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Message sent: ' + info.response);
 });
 
-// app.listen(3000, function(){
-// console.log("Express Started on Port 3000");
-// });
+app.post('/', function(req, res){
+  res.send('sent');
+});
+
+app.listen(3000, function(){
+console.log("Express Started on Port 3000");
+});
