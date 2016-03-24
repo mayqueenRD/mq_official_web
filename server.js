@@ -26,7 +26,7 @@ app.get('/submit', function(req, res){
   console.log(req.query.tree);
   var mailOptions = {
     from: req.query.name + " 👥 " + req.query.email,
-    to: "henrybi@uw.edu",
+    to: "pugetfence@gmail.com",
     subject: "New Request for Pricing Estimate",
     text: "New Contact Estimate",
     html: "<h4>Hi Ben, You have a new contact requesting for an estimate</h4><br>" +
