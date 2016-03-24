@@ -2,7 +2,7 @@
   "name": "puget-fence-llc",
   "version": "1.0.0",
   "description": "puget fence company website",
-  "main": "server.js",
+  "main": "index.html",
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
