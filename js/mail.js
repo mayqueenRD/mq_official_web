@@ -16,11 +16,10 @@ $("form").on("submit", function(e){
               };
 
   e.preventDefault();
-  console.log('change1');
-  console.log(process.env.PORT);
+  console.log("default");
   $.ajax({
     type: "GET",
-    url: "http://puget-fence-llc.herokuapp.com:3000",
+    url: "http://puget-fence-llc.herokuapp.com",
     data: contactInfo
   });
   document.getElementById("contactform").reset();
