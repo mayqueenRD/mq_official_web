@@ -1,10 +1,15 @@
 var express = require('express');
 var app = express();
+var http = require('http');
 var nodemailer = require("nodemailer");
-var bodyParser = require('body-parser');
-app.use(bodyParser.json()); // support json encoded bodies
 
 app.get('/', function(req, res){
+  res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+
+
+app.get('/submit', function(req, res){
 
   var smtpConfig = {
       host: 'smtp.gmail.com',

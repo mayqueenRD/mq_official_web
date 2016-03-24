@@ -19,7 +19,7 @@ $("form").on("submit", function(e){
   console.log("default");
   $.ajax({
     type: "GET",
-    url: "http://puget-fence-llc.herokuapp.com",
+    url: "http://puget-fence-llc.herokuapp.com/submit",
     data: contactInfo
   });
   document.getElementById("contactform").reset();
