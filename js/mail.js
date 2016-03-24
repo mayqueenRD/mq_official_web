@@ -16,7 +16,7 @@ $("form").on("submit", function(e){
               };
 
   e.preventDefault();
-  console.log("default");
+  console.log("ben and henry");
   $.ajax({
     type: "GET",
     url: "http://puget-fence-llc.herokuapp.com/submit",
