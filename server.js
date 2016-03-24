@@ -21,21 +21,21 @@ app.get('/', function(req, res){
   var mailOptions = {
     from: req.query.name + " 👥 " + req.query.email,
     to: "henrybi@uw.edu",
-    subject: "fence pricing estimate",
-    text: "estimate",
-    html: "<h4>Hello Ben 🐴, You have a contact to make for an estimate</h4> <br>" +
-    "Client Name: " + req.query.name + "<br>"  +
-    "Email Address: " + req.query.email + "<br>" +
-    "Telephone Number: " + req.query.number + "<br>" +
-    "Address: " + req.query.address + "<br>" + req.query.city + " , " + req.query.zipcode + "<br>" +
-    "Project Type: " + req.query.project + "<br>" +
-    "Fencing Material: " + req.query.material + "<br>" +
-    "Terrain Description: " + req.query.terrain + "<br>" +
-    "Project Size: " + req.query.size + "<br>" +
-    "Existing Tree Removal: " + req.query.tree + "<br>" +
-    "Existing Fence Removal: " + req.query.fence + "<br>" +
-    "Best Time to Call: " + req.query.call + "<br>" +
-    "Other Comments: " + req.query.comments + "<br>"
+    subject: "New Request for Pricing Estimate",
+    text: "New Contact Estimate",
+    html: "<h4>Hi Ben, You have a new contact requesting for an estimate</h4><br>" +
+    "Client Name: <b>" + req.query.name + "</b><br>"  +
+    "Email Address: <b>" + req.query.email + "</b><br>" +
+    "Telephone Number: <b>" + req.query.number + "</b><br>" +
+    "Address: <b>" + req.query.address + "</b><br><b>" + req.query.city + " </b>, <b>" + req.query.zipcode + "</b><br>" +
+    "Project Type: <b>" + req.query.project + "</b><br>" +
+    "Fencing Material: <b>" + req.query.material + "</b><br>" +
+    "Terrain Description: <b>" + req.query.terrain + "</b><br>" +
+    "Project Size: <b>" + req.query.size + "</b><br>" +
+    "Existing Tree Removal: <b>" + req.query.tree + "</b><br>" +
+    "Existing Fence Removal: <b>" + req.query.fence + "</b><br>" +
+    "Best Time to Call: <b>" + req.query.call + "</b><br>" +
+    "Other Comments: <b>" + req.query.comments + "</b><br>"
   };
 
   transporter.sendMail(mailOptions, function(error, info){
