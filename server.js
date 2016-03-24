@@ -3,6 +3,13 @@ var app = express();
 var http = require('http');
 var nodemailer = require("nodemailer");
 
+
+app.use(express.static(__dirname + '/'));
+
+app.get('/', function(req, res){
+  res.sendfile(__dirname + '/index.html');
+});
+
 app.get('/submit', function(req, res){
 
   var smtpConfig = {
