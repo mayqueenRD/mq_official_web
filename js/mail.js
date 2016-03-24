@@ -18,7 +18,7 @@ $("form").on("submit", function(e){
   e.preventDefault();
   $.ajax({
     type: "GET",
-    url: "http://0.0.0.0:3000/",
+    url: "http://puget-fence-llc.herokuapp.com:3000",
     data: contactInfo
   });
   document.getElementById("contactform").reset();
