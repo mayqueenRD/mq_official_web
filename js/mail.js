@@ -16,6 +16,7 @@ $("form").on("submit", function(e){
               };
 
   e.preventDefault();
+  console.log('change1');
   console.log(process.env.PORT);
   $.ajax({
     type: "GET",
