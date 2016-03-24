@@ -16,6 +16,7 @@ $("form").on("submit", function(e){
               };
 
   e.preventDefault();
+  console.log(process.env.PORT);
   $.ajax({
     type: "GET",
     url: "http://puget-fence-llc.herokuapp.com:3000",
