@@ -451,8 +451,28 @@ textarea{
 }
 select{
 	font-family: 'Lobster', cursive;
-
 }
+
+.submitInfo{
+  display: none;
+  z-index: 10;
+  background-color: rgba(66, 76, 85, 0.8);
+  color: white;
+  position: fixed;
+  height: 400px;
+  width: 70%;
+  top: 100px;
+  left: 10%;
+  right: 10%;
+  padding: 5%;
+  text-align: center;
+	font-family: 'Six Caps', sans-serif;
+	color: white;
+	font-size: 40px;
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+
 
 /*----------------------------------------------------------------FOOTER------------------------------------------------------------------- */
 
@@ -910,6 +930,26 @@ select{
 	font-family: 'Lobster', cursive;
 }
 
+.submitInfo{
+  display: none;
+  z-index: 10;
+  background-color: rgba(66, 76, 85, 0.8);
+  color: white;
+  position: fixed;
+  height: 250px;
+  width: 70%;
+  top: 100px;
+  left: 10%;
+  right: 10%;
+  padding: 5%;
+  text-align: center;
+	font-family: 'Six Caps', sans-serif;
+	color: white;
+	font-size: 40px;
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+
 /*----------------------------------------------------------------FOOTER------------------------------------------------------------------- */
 
 #lowerline{
@@ -1234,6 +1274,26 @@ textarea{
 }
 select{
 	font-family: 'Lobster', cursive;
+}
+
+.submitInfo{
+  display: none;
+  z-index: 10;
+  background-color: rgba(66, 76, 85, 0.8);
+  color: white;
+  position: fixed;
+  height: 250px;
+  width: 70%;
+  top: 100px;
+  left: 10%;
+  right: 10%;
+  padding: 5%;
+  text-align: center;
+	font-family: 'Six Caps', sans-serif;
+	color: white;
+	font-size: 40px;
+	font-weight: 100;
+	letter-spacing: 5px;
 
 }
 

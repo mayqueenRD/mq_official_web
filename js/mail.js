@@ -22,5 +22,10 @@ $("form").on("submit", function(e){
     url: "http://puget-fence-llc.herokuapp.com/submit",
     data: contactInfo
   });
+  $('.submitInfo').show();
   document.getElementById("contactform").reset();
+});
+
+$('.submitInfo').on('click', function(event) {
+  $('.submitInfo').hide();
 });
