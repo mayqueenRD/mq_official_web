@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>puget fence</title>
+    <link href="/static/style/boilerplate.css" rel="stylesheet" type="text/css">
+    <link href="/static/style/index.css" rel="stylesheet" type="text/css">
+    <!-- favicon fonts -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Six+Caps" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="gridContainer clearfix">
+      <div id="div1" class="fluid">
+
+        <header>
+            <div id="contact">
+                <h1><a href='https://dl.dropboxusercontent.com/u/70208644/images/doc/catalog/Mini-PC.pdf'>2016 New Catalog</a></h1>
+            </div>
+        	<div id="logo">
+            	<img src="/static/img/MQ2.png"/>
+            </div>
+        		<h1>MayQueen Embedded Studio</h1>
+
+        	<div id="cssmenu">
+        		<ul>
+					<li><a href="/"><span>Home</span></a></li>
+					<li class="active"><a href="products"><span>Products</span></a></li>
+					<li><a href="/download_minipc"><span>Download Center</span></a></li>
+					<li><a href="https://www.facebook.com/mayqueen.embedded/"><span>News</span></a></li>
+					<li><a href="http://www.mayqueentek.mooo.com:5000/"><span>Forum</span></a></li>
+					<li><a href="/about"><span>About Us</span></a></li>
+        		</ul>
+    		</div>
+		  </header>
+      <div id="formcontainer">
+        <form id ="contactform" name="contactform" method="post">
+
+            <table border=10>
+			<tr>
+			<td>
+            <strong>Part Number</strong><br>
+			</td>
+			<td>
+            <strong>{{part_number}}</strong><br`>
+            </td>
+            </tr>
+
+            <tr>
+			<td>
+            <strong>Technology</strong><br>
+
+			</td>
+			<td>
+            <strong>{{technology}}</strong><br>
+            </td>
+            </tr>
+
+             <tr>
+			<td>
+            <strong>Processor</strong><br>
+
+			</td>
+			<td>
+            <strong>{{processor}}</strong><br>
+            </td>
+            </tr>
+
+             <tr>
+			<td>
+            <strong>GPU</strong><br>
+
+			</td>
+			<td>
+            <strong>{{gpu}}</strong><br>
+            </td>
+            </tr>
+
+             <tr>
+			<td>
+            <strong>Memory</strong><br>
+
+			</td>
+			<td>
+            <strong>{{memory}}</strong><br>
+            </td>
+            </tr>
+
+             <tr>
+			<td>
+            <strong>Storage</strong><br>
+
+			</td>
+			<td>
+            <strong>{{storage}}</strong><br>
+            </td>
+            </tr>
+
+            <tr>
+			<td>
+            <strong>Network</strong><br>
+
+			</td>
+			<td>
+            <strong>{{network}}</strong><br>
+            </td>
+            </tr>
+
+             <tr>
+			<td>
+            <strong>Bluetooth</strong><br>
+
+			</td>
+			<td>
+            <strong>{{bluetooth}}</strong><br>
+            </td>
+            </tr>
+
+
+             <tr>
+			<td>
+            <strong>Display</strong><br>
+
+			</td>
+			<td>
+            <strong>{{display}}</strong><br>
+            </td>
+            </tr>
+
+
+             <tr>
+			<td>
+            <strong>Audio</strong><br>
+
+			</td>
+			<td>
+            <strong>{{audio}}</strong><br>
+            </td>
+            </tr>
+
+             <tr>
+			<td>
+            <strong>USB</strong><br>
+
+			</td>
+			<td>
+            <strong>{{usb}}</strong><br>
+            </td>
+            </tr>
+
+
+             <tr>
+			<td>
+            <strong>SPI</strong><br>
+
+			</td>
+			<td>
+            <strong>{{spi}}</strong><br>
+            </td>
+            </tr>
+
+             <tr>
+			<td>
+            <strong>GPIO</strong><br>
+
+			</td>
+			<td>
+            <strong>{{gpio}}</strong><br>
+            </td>
+            </tr>
+
+
+             <tr>
+			<td>
+            <strong>I2C</strong><br>
+
+			</td>
+			<td>
+            <strong>{{i2c}}</strong><br>
+            </td>
+            </tr>
+
+
+             <tr>
+			<td>
+            <strong>Case</strong><br>
+
+			</td>
+			<td>
+            <strong>{{case}}</strong><br>
+            </td>
+            </tr>
+
+             <tr>
+			<td>
+            <strong>Dimensions</strong><br>
+
+			</td>
+			<td>
+            <strong>{{dimensions}}</strong><br>
+
+            </td>
+            </tr>
+
+
+            </table>
+
+			<table>
+            <tr>
+              <td><br></td>
+              <td><br></td>
+            </tr>
+
+						<tr>
+							<td valign="top"><label for="first_name">Name *</label></td>
+ 							<td valign="top"><input  type="text" name="first_name" required></td>
+            </tr>
+            <tr>
+              <td valign="top"><label for="email">Email Address *</label></td>
+							<td valign="top"><input  type="text" name="email" required></td>
+ 						</tr>
+ 						<tr>
+              <td valign="top"><label for="telephone">Telephone Number *</label></td>
+              <td valign="top"><input  type="text" name="telephone" required></td>
+ 						</tr>
+ 						<tr>
+              <td valign="top"><label for="city">City</label></td>
+              <td valign="top"><input  type="text" name="city"></td>
+ 						</tr>
+						<tr>
+              <td colspan="2" style="text-align:center">
+                <input type="submit" value="Schedule a Free Estimate">
+              </td>
+						</tr>
+              <td><br></td>
+              <td><br></td>
+ 					</table>
+ 				</form>
+            </div>
+  			<div id="lowerline">
+        </div>
+
+        <footer>
+          <p>Copyright MayQueen 2016</p>
+        </footer>
+
+      </div>
+    </div>
+    <div class="submitInfo">
+      <h5>Thank you for submitting your request.</h5>
+      <h5>Ben will contact you as soon as possible.</h5>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <script src="/static/js/mail.js"></script>
+  </body>
+</html>

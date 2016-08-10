@@ -120,7 +120,6 @@ h1 {
 #cssmenu {
   position: static;
   width: auto;
-  background:url("../../img/wood/wood2.jpg") repeat;
   background-size: 250px 450px, auto;
   background-color:#544839;
   height: 146px;
@@ -604,7 +603,6 @@ h1 {
 #cssmenu {
   position: static;
   width: auto;
-  background:url("../img/wood/wood2.jpg") repeat;
   background-size: 250px 450px, auto;
   background-color:#544839;
   height: 21px;
@@ -1042,7 +1040,7 @@ h1 {
 
 #logo{
 	position: static;
-	width: 85.5px;
+	width: 180px;
 	float: left;
 	margin-left: 30px;
 	margin-top: 30px;
@@ -1089,9 +1087,8 @@ h1 {
 #cssmenu {
   position: static;
   width: auto;
-  background:url("../../img/wood/wood2.jpg") repeat;
   background-size: 250px 450px, auto;
-  background-color:#544839;
+  background-color:#000000;
   height: 25px;
   padding: 11px 0;
   margin-top: 0px;
@@ -1488,6 +1485,17 @@ footer p {
 	margin-left: 15px;
 	box-shadow: 2px 3px 4px black;
 }
+
+#mq_forum{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+	margin-top: 15px;
+	margin-left: 75px;
+	box-shadow: 2px 3px 4px black;
+}
+
 
 #div2{
 	margin-top: 37px;
