@@ -25,6 +25,24 @@ def main():
 def team():
     return render_template('mayqueen_web/team.html')
 
+@app.route("/download_search", methods=['GET' , 'POST'])
+def download_search():
+
+    the_list=request.form['thelist']
+
+    if the_list == "Mini PC":
+        url='mayqueen_web/download_minipc.html'
+    elif the_list == "Mini PC Plus":
+        url='mayqueen_web/download_minipcplus.html'
+    elif the_list == "Mini Server":
+        url='mayqueen_web/download_miniserver.html'
+    elif the_list == "Mini IoT":
+        url='mayqueen_web/download_miniiot.html'
+    elif the_list == "Dash-Cam":
+        url='mayqueen_web/download_minidashcam.html'
+
+    return render_template(url)
+
 @app.route("/support")
 def support():
 
@@ -81,9 +99,9 @@ def miniiot():
 def dashcam():
     return render_template('mayqueen_web/dashcam.html')
 
-@app.route("/download")
-def download():
-    return render_template('mayqueen_web/download.html')
+@app.route("/download_minipc")
+def download_minipc():
+    return render_template('mayqueen_web/download_minipc.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)

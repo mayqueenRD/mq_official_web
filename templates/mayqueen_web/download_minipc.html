@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Download Center</title>
+		<link rel="stylesheet" type="text/css" href="/static/NestedAccordion/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="/static/NestedAccordion/css/component.css" />
+		<script src="/static/NestedAccordion/js/modernizr.custom.js"></script>
+	</head>
+	<body>
+        <a href="/"><span><b>Home</b></span></a>
+		<div class="container">
+			<header class="clearfix">
+				<span>MayQueen Embedded Studio</span>
+				<h1>Download</h1>
+			</header>	
+			<div class="main">
+				<form action="/download_search" method="POST">
+				<select id="thelist" name="thelist" >
+				<option>Mini PC</option>
+				<option>Mini PC Plus</option>
+				<option>Mini Server</option>
+				<option>Mini IoT</option>
+				<option>Dash-Cam</option>
+				</select>
+				<input type="submit" name="btn_ok" class ="btn-primary" value="Confirm">
+				</form>
+
+				<ul id="cbp-ntaccordion" class="cbp-ntaccordion">
+					<li>
+						<h3 class="cbp-nttrigger">Documentation</h3>
+						<div class="cbp-ntcontent">
+                        <table border=10>
+                        <h4 class="underline"><strong>Schematics</strong></h4>
+
+
+        <tr>
+        <td>
+        <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/sch.png' class='content-thumbnail'/>
+        </td>
+        <td>
+        <a href='https://dl.dropboxusercontent.com/u/70208644/official_web_files/document/MiniPC/RPI-3B-V1_2-SCHEMATIC-REDUCED.pdf'>
+        <strong>RP009-3B</strong></a><br>
+        <strong>Release Date: 2016/05/06</strong><br>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+        <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/sch.png' class='content-thumbnail'/>
+        </td>
+        <td>
+        <a href='https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/Raspberry-Pi-B-Plus-V1.2-Schematics.pdf'><strong>RD003-2B</strong></a><br>
+        <strong>Release Date: 2015/09/19</strong><br>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+        <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/userguide.png' class='content-thumbnail'/>
+        </td>
+        <td>
+        <a href='#'><strong>Getting Started</strong></a><br>
+        <a href='https://wigcheng.gitbooks.io/mayqueen-softwrare-guide/content/'><strong>新手村中文版</strong></a><br>
+        <strong>Release Date: 2015/09/19</strong><br>
+        </td>
+        </tr>
+
+        </table>
+
+        </div>
+		</li>
+
+        <li>
+		<h3 class="cbp-nttrigger">Software Images</h3>
+		<div class="cbp-ntcontent">
+        <table border=10>
+
+    <tr>
+    <td>
+    <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/raspbian_mq.png' class='content-thumbnail'/>
+    </td>
+    <td>
+        <a href='https://goo.gl/Wwrvqd'><strong>RP009-3B SD image</strong></a><br>
+        <strong>Release Date: 2016/5/20</strong><br>
+        <strong>Raspbian 9 Taiwan (Kernel 4.4 For all Mini PC solution)</strong>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+        <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/xenial-16.04.png' class='content-thumbnail'/>
+    </td>
+    <td>
+        <a href='https://goo.gl/JxmCmh'><strong>RP009-3B/RP003-2B SD image</strong></a>     <a href='https://goo.gl/B21tjl'><strong>繁體中文版</strong></a><br>
+        <strong>Release Date: 2016/05/06</strong><br>
+        <strong>Ubuntu16.04 LTS (account:password=ubuntu:ubuntu)</strong>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+        <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/trusty-14.04LTS.png' class='content-thumbnail'/>
+    </td>
+    <td>
+        <a href='http://cht.tw/h/5nq8g'><strong>RP003-2B SD image</strong></a><br>
+        <strong>Release Date: 2015/12/24</strong><br>
+        <strong>Ubuntu14.04 LTS-Taiwan Version</strong>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+        <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/android_marshmallow.png' class='content-thumbnail'/>
+    </td>
+    <td>
+        <a href='https://goo.gl/ERVirr'><strong>RP003-2B SD image</strong></a><br>
+        <strong>Release Date: 2016/06/25</strong><br>
+        <strong>Android 6.0-Beta Version</strong>
+    </td>
+    </tr>
+        </table>
+
+        </div>
+		</li>
+
+
+
+					<li>
+						<h3 class="cbp-nttrigger">Source Code</h3>
+						<div class="cbp-ntcontent">
+                        <table border=10>
+                            <h4 class="underline"><strong>Linux Kernel</strong></h4>
+                                <tr>
+                                    <td>
+                                        <img src='https://dl.dropboxusercontent.com/u/70208644/images/official/support/linux.png' class='content-thumbnail'/>
+                                    </td>
+                                    <td>
+ 									<a href='https://github.com/mayqueenEMBEDDED/rpi-kernel'><strong>Linux Kernel Source</strong></a><br>
+ 									<strong>Release Date: 2016/07/19</strong><br>
+									<strong>github source</strong>
+                                    </td>
+                                </tr>
+                        </table>
+
+						</div>
+					</li>
+			</ul>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/static/NestedAccordion/js/jquery.cbpNTAccordion.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpNTAccordion( [options] );
+				- destroy:
+				$( selector ).cbpNTAccordion( 'destroy' );
+				*/
+
+				$( '#cbp-ntaccordion' ).cbpNTAccordion();
+
+			} );
+		</script>
+	</body>
+</html>
